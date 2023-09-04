@@ -7,8 +7,8 @@ export default function Home() {
             <h1>Bienvenue à toi 😅</h1>
 
             <ul className="card-container">
-                {propertyData.map((property, home) => (
-                <PropertyCard key ={home} property={property} />
+                {propertyData.map(( property, index) => (
+                <PropertyCard key={index} property={property} />
                 ))}
           </ul>
           
