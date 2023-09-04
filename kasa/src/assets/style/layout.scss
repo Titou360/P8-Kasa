@@ -1,0 +1,51 @@
+//-----------------------------
+// Display
+//-----------------------------
+
+// Propriétés d'affichage
+$displayFlex: flex;
+$displayBlock: block;
+$displayNone: none;
+$displayGrid : grid;
+
+//-----------------------------
+// Flex direction
+//-----------------------------
+
+// Directions flexbox
+$flexDirectionRow: row;
+$flexDirectionColumn: column;
+$flexDirectionRowReverse: row-reverse;
+$flexDirectionColumnReverse: column-reverse;
+
+//-----------------------------
+// Wrap
+//-----------------------------
+
+// Propriété de flex wrap
+$flexWrapNoWrap: nowrap;
+$flexWrapWrap: wrap;
+
+//-----------------------------
+// Alignement - Axe Y
+//-----------------------------
+
+// Justify content - Axe Y
+$alignContentCenter: center;
+$alignContentStart: flex-start;
+$alignContentEnd: flex-end;
+$alignContentSpaceAround: space-around;
+$alignContentSpaceBetween: space-between;
+$alignContentStretch: stretch;
+
+//-----------------------------
+// Alignement - Axe X
+//-----------------------------
+
+// Align-items - Axe X
+$alignItemsCenter: center;
+$alignItemsStart: flex-start;
+$alignItemsEnd: flex-end;
+$alignItemsSpaceAround: space-around;
+$alignItemsSpaceBetween: space-between;
+$alignItemsStretch: stretch;

@@ -4,7 +4,13 @@ import propertyData from "../../logements.json";
 export default function Home() {
     return (
         <div>
-            <h1>Bienvenue à toi 😅</h1>
+            <h1>
+              Chercher partout et ailleurs
+            </h1>
+
+            <div className="home-background">
+            </div>
+
 
             <ul className="card-container">
                 {propertyData.map(( property, index) => (

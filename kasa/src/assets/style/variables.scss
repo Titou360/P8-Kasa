@@ -1,0 +1,14 @@
+
+//-----------------------------
+// Color                      /
+//-----------------------------
+$primary-color : #FF6060;
+$secondary-color : #000;
+$third-color : #FFFFFF;
+
+
+h1 {
+    color : $third-color;
+    position: relative;
+    z-index: 1;
+}
