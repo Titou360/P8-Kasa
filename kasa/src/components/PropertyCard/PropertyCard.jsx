@@ -1,18 +1,18 @@
 // This components represents an individual card for each property.
 // This compoents takes data property & displays informations
 
-export default function PropertyCard (property) {
+export default function PropertyCard ( {property} ) {
     
-    console.log(property)
+    console.log(property.id)
     return (
         <li className="card">
             <article key={property.id}>
-              <img src={property.property.cover} alt={property.property.title} />
+              <img src={property.cover} alt={property.title} />
                 <h3>
-                    {property.property.title}
+                    {property.title}
                 </h3>
                     <p>
-                    {property.property.location}
+                    {property.location}
                     </p>
             </article>
         </li>
