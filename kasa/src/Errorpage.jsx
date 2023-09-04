@@ -8,7 +8,7 @@ export default function ErrorPage() {
     <div id="error-page">
 
       <h1>404</h1>
-      <p>Page d&aposerreur à revoir</p>
+      <p>Oups! La page que vous demandez n&apos;existe pas.</p>
       <p>
         <i>{error.statusText || error.message}</i>
       </p>

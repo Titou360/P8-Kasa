@@ -1,4 +1,4 @@
-function Footer() {
+export default function Footer() {
   return (
     <footer>
         <img alt="Logo de Kasa"></img>
@@ -6,5 +6,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;
