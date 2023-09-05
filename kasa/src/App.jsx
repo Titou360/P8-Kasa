@@ -1,6 +1,6 @@
 import '../src/assets/style/index.scss';
 import { Routes, Route } from "react-router-dom"
-import Home from "./components/Home/Home"
+import Home from "./routes/Home"
 import About from './routes/About';
 import Page404 from './components/404/page404';
 import Header from './components/Header/Header';
