@@ -1,0 +1,23 @@
+import '../src/assets/style/index.scss';
+import { Routes, Route } from "react-router-dom"
+import Home from "./routes/Home"
+import About from './routes/About';
+import Page404 from './components/404/page404';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+
+function App() {
+  return (
+    <div>
+      <Header />
+        <Routes>
+          <Route path="/" element= { <Home /> } />
+          <Route path="/about" element= { <About /> } />
+          <Route path="/*" element= { <Page404 /> } />
+        </Routes>
+      <Footer />
+    </div>
+  );
+}
+
+export default App;

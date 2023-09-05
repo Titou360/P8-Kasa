@@ -1,0 +1,38 @@
+// This is a fully homemade CSS 
+// Each HTML or JSX part has his prop CSS code
+
+/* Reset CSS */
+//@import 'reset'; // Use a reinitialisation file is needed
+
+/* Variables */
+@import 'variables'; // Define your SCSS variables here (color, font size, etc.)
+
+/* Mixins */
+//@import 'mixins'; // Define your mixins here (pour la réutilisation de styles)
+
+/* Base Styles */
+@import 'base'; // Define here HTML elements (body, a, p, etc.)
+
+/* Layout */
+@import 'layout'; // Define here all the display (grid, flexbox, etc.)
+
+/* Components */
+//@import 'components'; // Define here components style (button, form, etc.)
+
+/* Pages */
+@import 'pages'; // Define specifical styles fort website pages
+
+/* Media Queries */
+//@import 'media-queries'; // Manage responsives styles using Media Queries
+
+/* Animations */
+//@import 'animations'; // Define CSS animations if needed
+
+/* Custom Styles */
+//@import 'custom'; // Add your personnal custom here
+
+/* Print Styles */
+//@import 'print'; // Styles if you need to print
+
+/* Vendor Styles */
+@import 'vendor'; // Integetate here styles for frameworks (Bootstrap, Font Awesome, etc.)

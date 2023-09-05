@@ -1,0 +1,19 @@
+
+//-----------------------------
+// Color                      /
+//-----------------------------
+$primary-color : #FF6060;
+$secondary-color : #000;
+$third-color : #FFFFFF;
+
+
+h1 {
+    color : $secondary-color;
+    z-index: 1;
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; /* 68.448px */
+    
+}
