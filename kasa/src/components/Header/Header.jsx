@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import logoHeader from '../../assets/image/logo/h_logo.png';
 
 export default function Header() {
@@ -8,8 +8,8 @@ export default function Header() {
         <img src={logoHeader} alt="Logo de Kasa"></img>
 
         <ul>
-          <li><Link to="/">Accueil</Link></li>
-          <li><Link to ="/about">À propos</Link></li>
+          <li><NavLink to="/" activeClassName="active-link">Accueil</NavLink></li>
+          <li><NavLink to ="/about"activeClassName="active-link">À propos</NavLink></li>
         </ul>
       </nav>
     </header>

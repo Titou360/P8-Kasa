@@ -8,7 +8,12 @@ $third-color : #FFFFFF;
 
 
 h1 {
-    color : $third-color;
-    position: relative;
+    color : $secondary-color;
     z-index: 1;
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; /* 68.448px */
+    
 }

@@ -5,14 +5,14 @@ import PropTypes from 'prop-types';
 export default function PropertyCard ( {property} ) {
     return (
         <li className="card">
-            <article>
-              <img src={property.cover} alt={property.title} />
-                <h3>
+            <article className="card--article">
+              <img className="card--article__image" src={property.cover} alt={property.title} />
+                <h3 className="card--article__title">
                     {property.title}
                 </h3>
-                    <p>
+                    {/* <p className="card--article__location">
                     {property.location}
-                    </p>
+                    </p> */}
             </article>
         </li>
     )
