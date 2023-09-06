@@ -1,4 +1,5 @@
 import { useParams, Navigate } from "react-router-dom";
+
 import propertyData from "../logements.json";
 
 
@@ -17,9 +18,7 @@ const PropertyDetail = () => {
       {property && (
         <div>
           <div className="container-general">
-            {/* <HousingCarousel pictures={property.pictures} title={property.title} />
-            <HousingDetail logement={property} />
-            <HousingDropdown description={property.description} equipments={property.equipments} /> */}
+
           </div>
         </div>
       )} 
