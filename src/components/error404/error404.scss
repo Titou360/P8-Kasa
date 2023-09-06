@@ -1,0 +1,35 @@
+@import '../../assets/style/variables.scss';
+/* -----------------------------
+// 404 error page
+----------------------------- */
+
+.errorpage {
+    text-align: center;
+    color : $primary-color;
+
+    &--span {
+    margin-top: 139px;
+    font-size: 288px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 142.6%; /* 410.688px */
+    }
+
+    &--info {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; /* 51.336px */
+
+    }
+
+    &--backtohome {
+    margin: 139px 139px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; /* 25.668px */
+    text-decoration-line: underline;
+
+    }
+}

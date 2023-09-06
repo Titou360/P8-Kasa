@@ -1,11 +1,13 @@
-// This components represents an individual card for each property.
-// This compoents takes data property & displays informations
+// This component represents an individual card for each property.
+// This component takes property data & displays informations
 import PropTypes from 'prop-types';
+import  { Link } from 'react-router-dom';
 
 export default function PropertyCard ( {property} ) {
     return (
         <li className="card">
-            <article className="card--article">
+          <Link to={`/property/${property.id}`} title={property.title}>
+            <article className="card--article" id={property.id}>
               <img className="card--article__image" src={property.cover} alt={property.title} />
                 <h3 className="card--article__title">
                     {property.title}
@@ -14,6 +16,7 @@ export default function PropertyCard ( {property} ) {
                     {property.location}
                     </p> */}
             </article>
+          </Link>
         </li>
     )
 }

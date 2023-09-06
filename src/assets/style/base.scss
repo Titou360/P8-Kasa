@@ -3,58 +3,10 @@
 @import "animations.scss";
 
 
-* {
-    margin: 0;
+body {
+    margin:0 100px;
     font-family: $font-family;
-}
-
-
-//-----------------------------
-// Header                     /
-//-----------------------------
-
-header {
-    display : $displayFlex;
-    flex-direction : $flexDirectionRow;
-    max-width: 1220px;
-    margin : 45px auto 50px auto;
-
-
-
-    nav {
-    display: $displayFlex;
-    flex-direction: $flexDirectionRow;
-    justify-content: $alignItemsSpaceBetween;
-    align-items: $alignItemsCenter;
-    width: 100%;
-    margin: auto;
-    max-width: 1220px;
-
-        ul {
-            display: $displayFlex;
-            gap : 30px;
-        }
-
-        a {
-            text-align: right;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 142.6%; /* 34.224px */
-        }
-
-        a[aria-current="page"] { 
-            text-decoration: underline; //Underline the active link inside the page
-          }
-
-        img {
-            width: 210px;
-            height: 68px;
-        }
-    }
-
- 
-
+    box-sizing: border-box;
 }
 
 //-----------------------------
@@ -63,6 +15,7 @@ header {
 
 ul {
     list-style-type: none;
+    padding-left: 0px;
   }
 
   a {
