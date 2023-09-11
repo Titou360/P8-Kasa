@@ -3,7 +3,7 @@ import ArrowForward from "./arrow_forward.png";
 import ArrowBack from "./arrow_back.png";
 
 
-export default function Caroussel ({pictures, title,})  {
+export default function Slideshow ({pictures, title,})  {
     const pictureLenght = pictures.length;
 
     const [currentPictureIndex, setCurrentPictureIndex] = useState (0);
@@ -25,21 +25,21 @@ export default function Caroussel ({pictures, title,})  {
     const currentPicture = pictures[currentPictureIndex]
     if (pictureLenght === 1) {
         return (
-            <section className='carousel'>
+            <section className='slideshow'>
                 <img
                   src={currentPicture}
                   alt={title}
-                  className='carousel-picture'/>
+                  className='slideshow-picture'/>
             </section>
         );
     }
 
     return (
-        <section className="carousel">
-            <img src={currentPicture} alt={title} className="carouselPicture" />
-            <img src={ArrowBack} alt="Flèche gauche " onClick={previousPicture} className="carouselArrow carouselArrowLeft "></img>
-            <img src={ArrowForward} alt='Flèche droite' onClick={nextPicture} className="carouselArrow carouselArrowRight"></img>
-            <div className="carouselCounter"> {pictureCounter}</div>
+        <section className="slideshow">
+            <img src={currentPicture} alt={title} className="slideshowPicture" />
+            <img src={ArrowBack} alt="Flèche gauche " onClick={previousPicture} className="slideshowArrow slideshowArrowLeft "></img>
+            <img src={ArrowForward} alt='Flèche droite' onClick={nextPicture} className="slideshowArrow slideshowArrowRight"></img>
+            <div className="slideshowCounter"> {pictureCounter}</div>
         </section>
     )
 }

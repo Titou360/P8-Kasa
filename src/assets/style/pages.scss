@@ -14,7 +14,15 @@
     padding-bottom: 43px;
     max-width: 1440px;
     position: relative;
-    margin: 40px 100px 0px 100px;
+    margin: 40px auto 0px auto;
+
+    @include phone {
+        background-color: transparent;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+
+       }
 }
 
 .property-listing {
@@ -22,6 +30,11 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 40px;
+    
+
+    @include phone {
+        gap: 20px;
+       }
 }
 
 .card {
@@ -30,6 +43,12 @@
         border-radius: 10px;
         margin-bottom: 10px;
         position: relative;
+
+        @include phone {
+            width: 335px;
+            height: 255px;
+        }
+
             
         &--article {
             width: 100%;
@@ -60,6 +79,10 @@
                 margin: 0 auto;
                 z-index: 1;
 
+                @include phone {
+                    top : 78%;
+                }
+
             }
 
             &__location {
@@ -74,7 +97,3 @@
 //-----------------------------
 // PropertyDetails
 //-----------------------------
-
-.main-container {
-    background-color: pink;
-}

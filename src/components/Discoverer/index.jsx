@@ -1,7 +1,7 @@
 import { useState } from "react";
 import arrow from "../Discoverer/arrow_back.png";
 
-export default function Discoverer({ title, content, length }) {
+export default function Discoverer({ title, content, id }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isFadingOut, setIsFadingOut] = useState(false); // Nouvel état
 

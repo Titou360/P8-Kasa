@@ -1,6 +1,6 @@
 import { useParams, Navigate } from "react-router-dom";
 import propertyData from "../logements.json";
-import Carousel from "../components/Carousel";
+import Slideshow from "../components/Slideshow";
 import Stars from "../components/Stars";
 import Discoverer from "../components/Discoverer";
 
@@ -18,7 +18,7 @@ export default function PropertyDetail() {
 
 
             <div className="main-container">
-              <Carousel
+              <Slideshow
                 pictures={property.pictures}
                 title={property.title}
             />
@@ -47,9 +47,15 @@ export default function PropertyDetail() {
 
             </div>
 
-            <div className="notes">
-              <span className="notes--tags">{property.tags}</span>
-              <span className="notes--rating">
+            <div className="property-notes">
+              <span className="property-notes--tags">
+              {property.tags.map((tag, index) => (
+                <span key={index} className="tag">
+                {tag}
+              </span>
+              ))}
+              </span>
+              <span className="property-notes--rating">
                 <Stars
               starRating={property.rating}
               /></span>
@@ -58,15 +64,17 @@ export default function PropertyDetail() {
 
             <div className="discoverer-container">
               <Discoverer
+              key={`discoverer-${property.title}-description`}
               title ="Description"
               content={property.description}
-              className="discovererer-descritpion"
+              className="discoverer-descritpion"
               />
 
               <Discoverer
+              key={`discoverer-${property.title}-equipments`}
               title ="Équipements"
               content={property.equipments}
-              className="discovererer-equipments"
+              className="discoverer-equipments"
               />
             </div>
 

@@ -13,6 +13,8 @@ export default function About() {
             className="image-banner"
             image={ BannerAbout  }
             alt="photo de montagne"
+            title1=""
+            title2=""
           />
       </section>
 

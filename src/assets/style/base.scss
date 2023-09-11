@@ -24,33 +24,3 @@ ul {
   }
 
 
-
-//-----------------------------
-// Footer                     /
-//-----------------------------
-
-footer {
-    display: $displayFlex;
-    flex-direction: $flexDirectionColumn;
-    align-items: $alignItemsCenter;
-    gap: 28px;
-    margin-top: 50px;
-    background-color: $secondary-color;
-    width: 100%;
-
-
-    img {
-        width: 122px;
-        height: 39px;
-        margin-top: 56px;
-    }
-}
-
-.footer--p {
-    color : $third-color;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 142.6%; /* 34.224px */
-    margin-bottom: 29px;
-}

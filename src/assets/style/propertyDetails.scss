@@ -35,11 +35,13 @@
 
     &__name {
     text-align: right;
-    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 142.6%; /* 25.668px */
+    margin-right: 10px;
+    max-width: 93px;
+    height: 52px;
 
     }
 
@@ -58,14 +60,33 @@
     justify-content : space-between;
 }
 
-.notes {
+.property-notes {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
 
     &--tags {
-    background-color: $primary-color;
     color: $third-color;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    .tag {
+        display: flex;
+        align-items: center;
+        background-color: $primary-color;
+        text-align: center;
+        padding : 3px 37px 2px 37px;
+        border-radius: 25px;
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%; /* 19.964px */
+    }
+    
     }
 }
 

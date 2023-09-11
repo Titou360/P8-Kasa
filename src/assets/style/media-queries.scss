@@ -1,7 +1,21 @@
-// Smartphones jusqu'à 425px de large 
-
-// Tablettes de 426px à 767px de large
-
-// Ordinateurs portables de 768px jusqu’à 1388px de large
-
-// Écrans de bureau supérieurs à 1388px de large
+// Mixin for mobile devices (up to 425px)
+@mixin phone {
+    @media (max-width: 425px) {
+      @content;
+    }
+  }
+  
+  // Mixin for tablets (from 426px to 767px)
+  @mixin tablet {
+    @media (min-width: 426px) and (max-width: 767px) {
+      @content;
+    }
+  }
+  
+  // Mixin for desktop computer (from 768px)
+  @mixin laptop {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  

@@ -14,7 +14,6 @@ export default function Stars ({ starRating }) {
                 alt={i <= starRating ? "Active star" : "Inactive Star "}
             />
         )
-        console.log(starRating);
     }
 
     return (
