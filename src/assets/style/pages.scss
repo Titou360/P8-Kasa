@@ -12,6 +12,9 @@
     border-radius: 25px;
     padding-top: 56px;
     padding-bottom: 43px;
+    max-width: 1440px;
+    position: relative;
+    margin: 40px 100px 0px 100px;
 }
 
 .property-listing {
@@ -66,4 +69,12 @@
                 padding: 0px 20px;
 
             }
+}
+
+//-----------------------------
+// PropertyDetails
+//-----------------------------
+
+.main-container {
+    background-color: pink;
 }

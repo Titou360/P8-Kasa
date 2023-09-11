@@ -1,0 +1,23 @@
+@import "../style/layout.scss";
+
+.about-section {
+    display: $displayFlex;
+    align-items: $alignContentStart;
+    border-radius: 10px;
+    gap: 76px;
+    justify-content: $alignContentCenter;
+    margin: 0 0 38px;
+    padding: 0;
+    position: relative;
+}
+
+.discoverer-section {
+    display: $displayFlex;
+    flex-direction: $flexDirectionColumn;
+    gap: 30px;
+    justify-content: $alignContentCenter;
+    width: 80%;
+}
+
+
+

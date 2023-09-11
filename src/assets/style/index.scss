@@ -17,10 +17,12 @@
 @import 'layout'; // Define here all the display (grid, flexbox, etc.)
 
 /* Components */
-//@import 'components'; // Define here components style (button, form, etc.)
+@import 'components'; // Define here components style (button, form, etc.)
 
 /* Pages */
 @import 'pages'; // Define specifical styles fort website pages
+@import 'about';
+@import 'propertyDetails';
 
 /* Media Queries */
 @import 'media-queries'; // Manage responsives styles using Media Queries

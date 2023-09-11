@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
-import './error404.scss';
 
-export default function Page404() {
+export default function Error404() {
     return (
         <div className="errorpage">
             <span className="errorpage--span">

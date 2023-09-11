@@ -47,7 +47,7 @@
     
   }
   
-  .banner-home img {
+  .banner-home img, .banner-about img {
     height: 223px;
     width: 100%;
     border-radius: 25px;
@@ -61,14 +61,6 @@
     // @include phone {
     //   height: 111px;
     // }
-  }
-  
-  .banner-about img {
-    height: 223px;
-    width: 100%;
-    border-radius: 25px;
-    object-fit: cover;
-    filter: brightness(0.6);
   }
 
 // .banner {

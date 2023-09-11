@@ -1,19 +1,18 @@
-import PropertyCard from "../components/PropertyCard/PropertyCard";
+import PropertyCard from "../components/PropertyCard/";
 import propertyData from "../logements.json";
 import Banner from "../components/Banner";
-import BannerImage from "../components/Banner/falaise.jpeg";
+import BannerHome from "../components/Banner/falaise.jpeg";
 
 
 
 export default function Home() {
     return (
         <div>
-
         <section className="image-banner banner-home">
           <Banner
             className="image-banner"
-            image={ BannerImage }
-            alt="photo de montagne"
+            image={ BannerHome }
+            alt="photo de falaise"
             title1="Chez vous,"
             title2="partout et ailleurs"
           />

@@ -1,6 +1,4 @@
-
-
-import "../Banner/banner.scss";
+import PropTypes from 'prop-types';
 
 export default function Banner({ image, alt, title1, title2 }) {
   return (
@@ -14,3 +12,9 @@ export default function Banner({ image, alt, title1, title2 }) {
   );
 }
 
+Banner.propTypes = {
+  image: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  title1: PropTypes.string.isRequired,
+  title2: PropTypes.string.isRequired,
+};

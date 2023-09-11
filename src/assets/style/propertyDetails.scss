@@ -1,0 +1,94 @@
+@import "variables";
+
+.main-container {
+    display : flex;
+    flex-direction: column;
+    max-width: 1220px;
+    margin: 0px auto;
+}
+
+.property-titleandlocation {
+    display: flex;
+    flex-direction: column;
+    color : $primary-color;
+}
+
+.property-title {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; /* 51.336px */
+}
+
+.property-location {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; /* 25.668px */
+}
+
+.property-ownerdetails {
+    display: flex;
+    flex-direction: row;
+    color : $primary-color;
+    align-items: center;
+
+    &__name {
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; /* 25.668px */
+
+    }
+
+    &__profilpic {
+        border-radius : 50%;
+        object-fit: cover;
+        width: 64px;
+        height: 64px;
+        flex-shrink: 0;
+    }
+}
+
+.details-container {
+    display: flex;
+    flex-direction: row;
+    justify-content : space-between;
+}
+
+.notes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &--tags {
+    background-color: $primary-color;
+    color: $third-color;
+    }
+}
+
+.discoverer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap : 96px;
+
+    .discoverer {
+        width: 100%;
+    }
+
+    .discovererer-descritpion {
+        border: 1px red solid;
+        width: 100%;
+    }
+
+    .discovererer-equipments {
+        border: 1px green solid;
+        width: 32px;
+        height: 32px;
+    }
+}
+
