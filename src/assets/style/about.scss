@@ -1,12 +1,12 @@
 @import "../style/layout.scss";
 
 .about-section {
+    margin: $margin0-100px;
     display: $displayFlex;
     align-items: $alignContentStart;
     border-radius: 10px;
     gap: 76px;
     justify-content: $alignContentCenter;
-    margin: 0 0 38px;
     padding: 0;
     position: relative;
 }

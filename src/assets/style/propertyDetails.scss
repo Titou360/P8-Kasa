@@ -5,6 +5,10 @@
     flex-direction: column;
     max-width: 1220px;
     margin: 0px auto;
+
+    @include phone {
+        margin: $margin0-20px;
+    }
 }
 
 .property-titleandlocation {
@@ -18,6 +22,11 @@
     font-style: normal;
     font-weight: 500;
     line-height: 142.6%; /* 51.336px */
+
+    @include phone {
+        font-size: 18px;
+
+    }
 }
 
 .property-location {

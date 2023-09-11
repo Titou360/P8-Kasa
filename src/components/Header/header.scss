@@ -6,14 +6,14 @@
 ----------------------------- */
 
 header {
+    margin: $margin0-100px;
     display : $displayFlex;
     flex-direction : $flexDirectionRow;
     max-width: 1220px;
     margin : 45px auto 50px auto;
 
     @include phone {
-        width: 93%;
-        margin: 20px auto 27px auto;
+        margin : $margin0-20px;
 
       }
 }
@@ -24,12 +24,15 @@ header {
     justify-content: $alignItemsSpaceBetween;
     align-items: $alignItemsCenter;
     width: 100%;
-    margin: auto;
     max-width: 1220px;
 
         ul {
             display: $displayFlex;
-            gap : 30px;
+            gap : 57px;
+
+            @include phone {
+                gap: 26px;
+            }
             
         }
 
@@ -41,11 +44,7 @@ header {
             line-height: 142.6%; /* 34.224px */
 
             @include phone  {
-                text-align: right;
                 font-size: 12px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 142.6%; /* 17.112px */
                 text-transform: uppercase;
             }
         }
