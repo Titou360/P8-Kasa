@@ -4,27 +4,34 @@
     border: 1px solid #ccc;
     margin-top: 24px;
     max-width: 1023px;
+    background-color: #f6f6f6;
 
   
   &--header {
     display: flex;
     justify-content: space-between;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    height: 52px;
+    background-color: #f0f0f0;
     background: var(--Red, $primary-color);
     color : $third-color;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 24px;
     font-style: normal;
+    font-weight: 500;
     width: 100%;
+    position: relative;
+    z-index: 2;
+
+    @include phone {
+      height: 30px;
+      font-size: 13px;
+    }
 
     img {
       cursor: pointer;
     }
 
-    // line-height: 142.6%; /* 34.224px */
   }
 
     h3 {
@@ -33,7 +40,6 @@
   
   &--content {
     display: none;
-    background-color: #f6f6f6;
     border-radius: 0 0 10px 10px;
     color: $primary-color;
     font-size: 24px;
@@ -42,13 +48,11 @@
     overflow: hidden;
     padding: 40px 20px;
     position: relative;
+    transition: max-height 0.5s ease;
+    text-align: justify;
+    z-index: 1;
   }
-
 }
-
-  .discoverer.open .discoverer--content {
-    display: block;
-  }
 
 .open img, .closed img {
   margin: 10px 20px 10px 0px;
@@ -56,22 +60,32 @@
   height: 32px;
 }
 
-.rotate {
-  transition: transform 0.5s ease; /* Animation de la propriété 'transform' */
+.arrow-icon {
+  transform: rotate(90deg);
 }
 
+.open .arrow-icon {
+  transform: rotate(-90deg);
+  transition: transform 0.5s ease;
+}
 
+.closed .arrow-icon {
+  transform: rotate(90deg);
+  transition: transform 0.5s ease;
+}
 
+.discoverer.open .discoverer--content {
+    display: block;
+}
 
 /* lineup class and keyframes */
 .lineUp {
-  animation: 0.3s animlineUp ease-out forwards;
+  animation: 1s anim-lineUp ease-out forwards;
 }
-
-@keyframes animlineUp {
+@keyframes anim-lineUp {
   0% {
     opacity: 0;
-    transform: translateY(80%);
+    transform: translateY(-80%);
   }
   20% {
     opacity: 0;
@@ -86,7 +100,3 @@
   }
 }
 
-.fade-out {
-  opacity: 0;
-  transition: opacity 0.3s ease; /* Animation de l'opacité */
-}
