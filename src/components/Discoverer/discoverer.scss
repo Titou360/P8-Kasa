@@ -78,11 +78,13 @@
     display: block;
 }
 
-/* lineup class and keyframes */
-.lineUp {
-  animation: 1s anim-lineUp ease-out forwards;
+/*--------------------------------------
+/ lineup & lineDown classes and keyframes
+---------------------------------------*/
+.lineDown {
+  animation: 1s anim-lineDown ease-out forwards;
 }
-@keyframes anim-lineUp {
+@keyframes anim-lineDown {
   0% {
     opacity: 0;
     transform: translateY(-80%);
@@ -100,3 +102,23 @@
   }
 }
 
+.lineUp {
+  animation: 1s anim-lineUp ease-out forwards;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-80%);
+  }
+}

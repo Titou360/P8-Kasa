@@ -6,7 +6,7 @@ export default function Discoverer({ title, content}) {
 
   const arrowIconClass = isOpen ? "arrow-icon" : "arrow-icon";
 
-  const contentLineUp = `discoverer--content ${isOpen ? "open" : "closed"} ${isOpen ? "lineUp" : ""}`;
+  const contentLineDown = `discoverer--content ${isOpen ? "open" : "closed"} ${isOpen ? "lineDown" : ""}`;
 
  
 
@@ -21,7 +21,7 @@ export default function Discoverer({ title, content}) {
         <h3>{title}</h3>
         <img src={arrow} alt="Icône" className={arrowIconClass} />
       </div>
-      <div className={contentLineUp}>
+      <div className={contentLineDown}>
 
         {title === "Équipements" ? (
           <div className="property--equipments">

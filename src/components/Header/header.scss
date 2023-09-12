@@ -10,7 +10,7 @@ header {
     display : $displayFlex;
     flex-direction : $flexDirectionRow;
     max-width: 1220px;
-    margin : 45px auto 50px auto;
+    margin : 45px auto 0px auto;
 
     @include phone {
         margin : $margin0-20px;
