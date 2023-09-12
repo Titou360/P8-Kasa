@@ -1,41 +1,45 @@
 import { useState } from "react";
-import arrow from "../Discoverer/arrow_back.png";
+import Arrow from "../Slideshow/arrow_back.png"
 
-export default function Discoverer({ title, content}) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const arrowIconClass = isOpen ? "arrow-icon" : "arrow-icon";
-
-  const contentLineDown = `discoverer--content ${isOpen ? "open" : "closed"} ${isOpen ? "lineDown" : ""}`;
-
- 
-
-  const toggleDiscoverer = () => {
-    setIsOpen(!isOpen);
+export default function Discoverer({ title, content })  {
+  const [isContentVisible, setContentVisible] = useState(false);
+  
+  const toggleContent = () => {
+    setContentVisible(!isContentVisible);
   };
 
+  const contentContainerClass = `discoverer--content ${
+    isContentVisible ? "lineDown" : ""
+  }`;
+
+
   return (
-    <div className={`discoverer ${isOpen ? "open" : "closed"}`}>
+    <div>
+      <button
+        className="discoverer--header"
+        onClick={toggleContent}
+      >
 
-      <div className="discoverer--header" onClick={toggleDiscoverer}>
-        <h3>{title}</h3>
-        <img src={arrow} alt="Icône" className={arrowIconClass} />
-      </div>
-      <div className={contentLineDown}>
+        {title}
 
-        {title === "Équipements" ? (
-          <div className="property--equipments">
-            {content.map((equipment, index) => (
-              <span key={index}>
-                {equipment}
-                {index < content.length - 1 && <br />}
-              </span>
-            ))}
-          </div>
-        ) : (
-          content
-        )}
+          <img
+           src={Arrow}
+           className="arrow-icon"
+           alt="Icône">
+          </img>
+      </button>
+
+      {isContentVisible && (
+      <div>
+        <p 
+        className={contentContainerClass}
+        >
+           {content}
+       </p>
       </div>
+      )}
+
+
     </div>
   );
 }

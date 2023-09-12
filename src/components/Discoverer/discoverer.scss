@@ -1,16 +1,22 @@
 @import "../../assets/style/variables.scss";
 
 .discoverer {
-    border: 1px solid #ccc;
-    margin-top: 24px;
-    max-width: 1023px;
-    background-color: #f6f6f6;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  position: relative;
+  z-index: 2;
 
   
   &--header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: none;
     height: 52px;
     background-color: #f0f0f0;
     background: var(--Red, $primary-color);
@@ -39,7 +45,6 @@
     }
   
   &--content {
-    display: none;
     border-radius: 0 0 10px 10px;
     color: $primary-color;
     font-size: 24px;
@@ -62,6 +67,10 @@
 
 .arrow-icon {
   transform: rotate(90deg);
+  border : 1px solid blue;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
 }
 
 .open .arrow-icon {
