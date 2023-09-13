@@ -1,14 +1,14 @@
 import { useState } from "react";
-import Arrow from "../Slideshow/arrow_back.png"
+import Arrow from "../Slideshow/arrow_back.png";
 import PropTypes from 'prop-types';
-
 
 export default function Discoverer({title, content, key})  {
   const [isContentVisible, setContentVisible] = useState(false);
-  
+
   const toggleContent = () => {
     setContentVisible(!isContentVisible);
   };
+
 
   const contentContainerClass = `discoverer--content ${
     isContentVisible ? "lineDown" : ""
@@ -34,7 +34,9 @@ export default function Discoverer({title, content, key})  {
       </button>
 
       {isContentVisible && (
-      <div className={contentContainerClass}>
+      <div
+        id="contentContainer"
+        className={contentContainerClass}>
            {content}
       </div>
       )}
