@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import ArrowForward from "./arrow_forward.png";
-import ArrowBack from "./arrow_back.png";
+
+import ArrowForward from "../../assets/image/arrow/arrow_forward.png";
+import ArrowBack from "../../assets/image/arrow/arrow_back.png";
 
 
 export default function Slideshow ({pictures, title,})  {

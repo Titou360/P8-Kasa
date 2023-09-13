@@ -1,7 +1,7 @@
 import Discoverer from "../components/Discoverer"
 import AboutData from "../../src/data/about.json";
 import Banner from "../components/Banner";
-import BannerAbout from "../components/Banner/mountain.jpeg";
+import BannerAbout from "../../src/assets/image/bkg/mountain.jpeg";
 
 export default function About() {
   const aboutData = AboutData;

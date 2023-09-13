@@ -1,7 +1,7 @@
 import PropertyCard from "../components/PropertyCard/";
 import propertyData from "../data/logements.json";
 import Banner from "../components/Banner";
-import BannerHome from "../components/Banner/falaise.jpeg";
+import BannerHome from "../../src/assets/image/bkg/falaise.jpeg";
 
 
 

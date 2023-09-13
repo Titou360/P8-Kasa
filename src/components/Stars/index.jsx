@@ -1,5 +1,5 @@
-import starActive from '../Stars/star-active.png';
-import starInactive from '../Stars/star-inactive.png';
+import starActive from '../../assets/image/stars/star-active.png';
+import starInactive from '../../assets/image/stars/star-inactive.png';
 
 
 export default function Stars ({ starRating }) {

@@ -9,9 +9,6 @@
   position: relative;
   z-index: 2;
 
-  @include phone {
-    margin : 20px 0px 20px;
-  }
 
   
   &--header {

@@ -22,6 +22,10 @@
     gap: 30px;
     justify-content: $alignContentCenter;
     width: 80%;
+
+    @include phone {
+        gap: 20px;
+    }
 }
 
 
