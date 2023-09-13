@@ -1,13 +1,25 @@
 @import "variables";
 
 .main-container {
-    display : flex;
-    flex-direction: column;
-    max-width: 1220px;
     margin: 0px auto;
 
     @include phone {
         margin: $margin0-20px;
+
+        .property-titleandlocation {
+            order:1;
+        }
+        .property-notes {
+            order:2;
+        }
+
+        .property-tags {
+            order:3;
+        }
+
+        .property-ownerdetails {
+            order:4;
+        }
     }
 }
 
@@ -25,7 +37,6 @@
 
     @include phone {
         font-size: 18px;
-
     }
 }
 
@@ -67,6 +78,8 @@
     display: flex;
     flex-direction: row;
     justify-content : space-between;
+    margin: $margin0-100px;
+    width: 100%;
 }
 
 .property-notes {
@@ -82,6 +95,8 @@
     flex-direction: row;
     gap: 10px;
 
+    }
+
     .tag {
         display: flex;
         align-items: center;
@@ -95,16 +110,19 @@
         font-weight: 500;
         line-height: 142.6%; /* 19.964px */
     }
-    
-    }
+
 }
 
-.discoverer-container {
+.discoverer-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     width: 100%;
     gap : 96px;
+
+    @include phone {
+        gap : 20px;
+    }
 
     .discoverer {
         width: 100%;
@@ -119,6 +137,20 @@
         border: 1px green solid;
         width: 32px;
         height: 32px;
+    }
+}
+
+.star {
+    display: $displayFlex;
+    flex-direction: $flexDirectionRow;
+    flex-wrap: nowrap;
+    width: 196px;
+    height: 36px;
+
+    @include phone {
+            width: 98px;
+            height: 18px;
+
     }
 }
 

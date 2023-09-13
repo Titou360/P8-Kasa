@@ -6,15 +6,10 @@
 ----------------------------- */
 
 header {
-    margin: 0 250px;
-    display : $displayFlex;
-    flex-direction : $flexDirectionRow;
-    max-width: 1220px;
-    margin : 45px auto 0px auto;
-
+    margin : 45px 100px 0px 100px;
+    
     @include phone {
         margin : $margin0-20px;
-
       }
 }
 
@@ -22,9 +17,7 @@ header {
     display: $displayFlex;
     flex-direction: $flexDirectionRow;
     justify-content: $alignItemsSpaceBetween;
-    align-items: $alignItemsCenter;
-    width: 100%;
-    max-width: 1220px;
+    align-items: $alignItemsCenter;    
 
         ul {
             display: $displayFlex;
@@ -53,7 +46,7 @@ header {
             width: 210px;
             height: 68px;
 
-            @media (max-width: 425px) {
+            @include phone {
                 width: 145px;
                 height: 47px;
         }

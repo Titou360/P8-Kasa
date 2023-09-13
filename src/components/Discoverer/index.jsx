@@ -12,9 +12,10 @@ export default function Discoverer({ title, content })  {
     isContentVisible ? "lineDown" : ""
   }`;
 
+  const arrowIconClass = `arrow-icon ${isContentVisible ? "open" : ""}`;
 
   return (
-    <div>
+    <div className="discoverer">
       <button
         className="discoverer--header"
         onClick={toggleContent}
@@ -24,7 +25,7 @@ export default function Discoverer({ title, content })  {
 
           <img
            src={Arrow}
-           className="arrow-icon"
+           className={arrowIconClass}
            alt="Icône">
           </img>
       </button>

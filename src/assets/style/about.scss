@@ -9,6 +9,10 @@
     justify-content: $alignContentCenter;
     padding: 0;
     position: relative;
+
+    @include phone {
+        margin : $margin0-20px;
+    }
 }
 
 .discoverer-section {

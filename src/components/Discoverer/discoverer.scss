@@ -2,14 +2,16 @@
 
 .discoverer {
   cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
+  text-align: right;
   border: none;
   outline: none;
   transition: 0.4s;
   position: relative;
   z-index: 2;
+
+  @include phone {
+    margin : 20px 0px 20px;
+  }
 
   
   &--header {
@@ -45,45 +47,46 @@
     }
   
   &--content {
+    cursor: default;
     border-radius: 0 0 10px 10px;
     color: $primary-color;
     font-size: 24px;
     font-weight: 400;
     line-height: 25px;
     overflow: hidden;
-    padding: 40px 20px;
+    padding: 20px;
     position: relative;
     transition: max-height 0.5s ease;
     text-align: justify;
     z-index: 1;
-  }
-}
+    background-color: #f0f0f0;
+    margin-top: 0px;
+    margin-bottom: 0px;
 
-.open img, .closed img {
-  margin: 10px 20px 10px 0px;
-  width: 32px;
-  height: 32px;
+    @include phone {
+      font-size: 14px;
+    }
+  }
 }
 
 .arrow-icon {
   transform: rotate(90deg);
-  border : 1px solid blue;
   width: 32px;
   height: 32px;
   margin-right: 10px;
-}
-
-.open .arrow-icon {
-  transform: rotate(-90deg);
-  transition: transform 0.5s ease;
-}
-
-.closed .arrow-icon {
+  margin: 10px 20px 10px 0px;
   transform: rotate(90deg);
   transition: transform 0.5s ease;
 }
 
-.discoverer.open .discoverer--content {
+.open {
+  transform: rotate(-90deg);
+  transition: transform 0.5s ease;
+}
+
+
+
+.discoverer--content {
     display: block;
 }
 

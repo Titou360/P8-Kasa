@@ -16,3 +16,15 @@ h1 {
     line-height: 142.6%; /* 68.448px */
     
 }
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.root {
+    max-width: 1900px;
+    width: 100%;
+}
