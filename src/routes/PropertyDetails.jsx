@@ -1,5 +1,5 @@
 import { useParams, Navigate } from "react-router-dom";
-import propertyData from "../logements.json";
+import propertyData from "../data/logements.json";
 import Slideshow from "../components/Slideshow";
 import Stars from "../components/Stars";
 import Discoverer from "../components/Discoverer";
@@ -9,6 +9,7 @@ export default function PropertyDetail() {
 
   const { id } = useParams();
   const property = propertyData.find((item) => item.id === id)
+
 
 
   return (
@@ -40,8 +41,9 @@ export default function PropertyDetail() {
               <img
               className="property-ownerdetails__profilpic"
               src={property.host.picture}
-              alt="Photo de profil de l'hôte">
+              alt={property.host.name}>
               </img>
+
 
             </div>
 
@@ -55,10 +57,12 @@ export default function PropertyDetail() {
               </span>
               ))}
               </span>
+
               <span className="property-notes--rating">
                 <Stars
               starRating={property.rating}
-              /></span>
+              />
+              </span>
               
             </div>
 
@@ -73,14 +77,17 @@ export default function PropertyDetail() {
               <Discoverer
               key={`discoverer-${property.title}-equipments`}
               title ="Équipements"
-              content={property.equipments}
+              content={property.equipments.map((equipment) => (
+                <span key={equipment.id}>{equipment}</span>
+              ))}
               className="discoverer-equipments"
               />
             </div>
 
             </div>
-
       )}
     </div>
   );
+
+  
 }

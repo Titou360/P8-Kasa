@@ -30,6 +30,7 @@
     width: 100%;
     position: relative;
     z-index: 2;
+    padding-left: 15px;
 
     @include phone {
       height: 30px;
@@ -47,6 +48,8 @@
     }
   
   &--content {
+    display: flex;
+    flex-direction: column;
     cursor: default;
     border-radius: 0 0 10px 10px;
     color: $primary-color;
@@ -77,17 +80,17 @@
   margin: 10px 20px 10px 0px;
   transform: rotate(90deg);
   transition: transform 0.5s ease;
+
+  @include phone {
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+  }
 }
 
 .open {
   transform: rotate(-90deg);
   transition: transform 0.5s ease;
-}
-
-
-
-.discoverer--content {
-    display: block;
 }
 
 /*--------------------------------------

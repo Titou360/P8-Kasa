@@ -1,5 +1,5 @@
 import PropertyCard from "../components/PropertyCard/";
-import propertyData from "../logements.json";
+import propertyData from "../data/logements.json";
 import Banner from "../components/Banner";
 import BannerHome from "../components/Banner/falaise.jpeg";
 

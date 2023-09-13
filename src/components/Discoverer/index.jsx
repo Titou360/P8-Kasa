@@ -1,7 +1,9 @@
 import { useState } from "react";
 import Arrow from "../Slideshow/arrow_back.png"
+import PropTypes from 'prop-types';
 
-export default function Discoverer({ title, content })  {
+
+export default function Discoverer({title, content, key})  {
   const [isContentVisible, setContentVisible] = useState(false);
   
   const toggleContent = () => {
@@ -17,6 +19,7 @@ export default function Discoverer({ title, content })  {
   return (
     <div className="discoverer">
       <button
+        key={key}
         className="discoverer--header"
         onClick={toggleContent}
       >
@@ -31,12 +34,8 @@ export default function Discoverer({ title, content })  {
       </button>
 
       {isContentVisible && (
-      <div>
-        <p 
-        className={contentContainerClass}
-        >
+      <div className={contentContainerClass}>
            {content}
-       </p>
       </div>
       )}
 
@@ -44,3 +43,22 @@ export default function Discoverer({ title, content })  {
     </div>
   );
 }
+
+
+Discoverer.propTypes = {
+  property: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    cover: PropTypes.string.isRequired,
+    pictures: PropTypes.arrayOf(PropTypes.string).isRequired,
+    description: PropTypes.string.isRequired,
+    host: PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      picture: PropTypes.string.isRequired,
+    }).isRequired,
+    rating: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    equipments: PropTypes.arrayOf(PropTypes.string).isRequired,
+    tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+  }).isRequired,
+};

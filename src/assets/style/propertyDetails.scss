@@ -79,7 +79,6 @@
     flex-direction: row;
     justify-content : space-between;
     margin: $margin0-100px;
-    width: 100%;
 }
 
 .property-notes {
@@ -88,6 +87,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 20px;
+    margin: $margin0-100px;
 
     &--tags {
     color: $third-color;
@@ -113,31 +113,29 @@
 
 }
 
-.discoverer-section {
+.discoverer-container {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    width: 100%;
+    margin: $margin0-100px;
+    margin-top: 50px;
     gap : 96px;
+
+    @include largeDesktop {
+        flex-direction: column;
+    }
 
     @include phone {
         gap : 20px;
     }
 
     .discoverer {
-        width: 100%;
+        width: 50%;
+
+        @include largeDesktop {
+            width: 100%;
+        }
     }
 
-    .discovererer-descritpion {
-        border: 1px red solid;
-        width: 100%;
-    }
-
-    .discovererer-equipments {
-        border: 1px green solid;
-        width: 32px;
-        height: 32px;
-    }
 }
 
 .star {

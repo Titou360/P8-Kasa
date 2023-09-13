@@ -1,5 +1,5 @@
 import Discoverer from "../components/Discoverer"
-import AboutData from "../about.json";
+import AboutData from "../../src/data/about.json";
 import Banner from "../components/Banner";
 import BannerAbout from "../components/Banner/mountain.jpeg";
 
