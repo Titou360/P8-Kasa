@@ -70,16 +70,14 @@ export default function PropertyDetail() {
               <Discoverer
               key={`discoverer-${property.title}-description`}
               title ="Description"
-              content={property.description}
+              content={property.description} 
               className="discoverer-descritpion"
               />
 
               <Discoverer
               key={`discoverer-${property.title}-equipments`}
               title ="Équipements"
-              content={property.equipments.map((equipment) => (
-                <span key={equipment.id}>{equipment}</span>
-              ))}
+              content={property.equipments.join(', ')}
               className="discoverer-equipments"
               />
             </div>

@@ -34,6 +34,7 @@
     gap: 40px;
     grid-template-columns: repeat(3, 340px);
     grid-auto-rows: 340px;
+    padding: 20px;
 
     @include phone {
         grid-template-columns: repeat(1, 335px);
