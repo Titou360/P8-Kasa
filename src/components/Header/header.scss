@@ -6,10 +6,25 @@
 ----------------------------- */
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin : 45px 100px 0px 100px;
+
     @include phone {
-        margin : $margin0-20px;
+        margin : 45px 20px 0px 20px;
       }
+
+      
+      img {
+        width: 210px;
+        height: 68px;
+
+        @include phone {
+            width: 145px;
+            height: 47px;
+        }
+    }
 }
 
    

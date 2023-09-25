@@ -6,17 +6,13 @@ export default function Header() {
 
   return (
     <header>
-      <nav>
         <Link to="/">
           <img src= { logoHeader }
           className="logo-header"
           alt="Logo de Kasa"
           />
         </Link>
-
       <Navbar />
-
-      </nav>
     </header>
   );
 }

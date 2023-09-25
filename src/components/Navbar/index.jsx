@@ -4,7 +4,7 @@ export default function Navbar() {
 
 return (
  <>
-         <ul>
+         <ul className="nav-list">
           <li>
             <NavLink to="/"
             className={({ isActive }) => (isActive ? 'active' : 'inactive')}

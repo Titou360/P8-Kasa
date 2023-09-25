@@ -13,7 +13,7 @@
   }
   
   // Mixin for desktop computer (from 768px)
-  @mixin laptop {
+  @mixin desktop {
     @media (min-width: 767px) {
       @content;
     }

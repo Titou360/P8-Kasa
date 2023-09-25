@@ -1,4 +1,4 @@
-
+@import "./media-queries.scss";
 //-----------------------------
 // Color                      /
 //-----------------------------
@@ -9,11 +9,16 @@ $third-color : #FFFFFF;
 
 h1 {
     z-index: 1;
-    color: #FFF;
+    color: $third-color;
     font-size: 48px;
     font-style: normal;
     font-weight: 500;
     line-height: 142.6%; /* 68.448px */
+
+    @include phone {
+        font-size : 24px;
+        padding: 0;
+    }
     
 }
 
