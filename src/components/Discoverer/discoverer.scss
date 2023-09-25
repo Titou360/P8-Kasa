@@ -8,7 +8,12 @@
   transition: 0.4s;
   position: relative;
   z-index: 2;
+  max-width: 1024px;
+  opacity: 1;
 
+  :hover {
+    opacity: 0.9;
+  }
 
   
   &--header {
@@ -68,6 +73,24 @@
     }
   }
 }
+
+
+
+.discoverer--expend {
+    .discoverer {
+      &__title {
+        &::after {
+          transform: rotate(360deg) !important;
+        }
+      }
+
+      &__content {
+        padding: spacer(0.7) spacer(0.6);
+        padding-top: 4rem;
+        max-height: 500px;
+      }
+    }
+  }
 
 .arrow-icon {
   transform: rotate(90deg);

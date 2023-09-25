@@ -1,5 +1,6 @@
-import {Link, NavLink} from "react-router-dom";
+import {Link} from "react-router-dom";
 import logoHeader from '../../assets/image/logo/h_logo.png';
+import Navbar from "../Navbar";
 
 export default function Header() {
 
@@ -13,24 +14,8 @@ export default function Header() {
           />
         </Link>
 
-        <ul>
-          <li>
-            <NavLink to="/"
-            className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-            exact="true">
-              Accueil
-            </NavLink>
-          </li>
+      <Navbar />
 
-          <li>
-            <NavLink to ="/about"
-            className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-            >
-            À propos
-            </NavLink>
-          </li>
-
-        </ul>
       </nav>
     </header>
   );

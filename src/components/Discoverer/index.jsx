@@ -16,7 +16,7 @@ export default function Discoverer({ title, content }) {
   const arrowIconClass = `arrow-icon ${isContentVisible ? "open" : ""}`;
 
   return (
-    <div className="discoverer">
+    <div className="discoverer discoverer--expend">
       <button className="discoverer--header" onClick={toggleContent}>
         {title}
         <img src={Arrow} className={arrowIconClass} alt="Icône" />

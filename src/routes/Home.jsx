@@ -1,13 +1,14 @@
-import PropertyCard from "../components/PropertyCard/";
-import propertyData from "../data/logements.json";
-import Banner from "../components/Banner";
-import BannerHome from "../../src/assets/image/bkg/falaise.jpeg";
+import PropertyCard from "../components/PropertyCard/"
+import propertyData from "../data/logements.json"
+import Banner from "../components/Banner"
+import BannerHome from "../../src/assets/image/bkg/falaise.jpeg"
+
 
 
 
 export default function Home() {
     return (
-        <div>
+            <div>
         <section className="image-banner banner-home">
           <Banner
             className="image-banner"
@@ -25,7 +26,6 @@ export default function Home() {
             ))}
         </ul>
         </section>
-          
         </div>
     );
 }
