@@ -2,29 +2,48 @@
 //-----------------------------
 // Homepage
 //-----------------------------
+main {
+    margin-top : 50px;
+}
+
 
 //-----------------------------
 // Cards Gallery on Homepage
 //-----------------------------
+.properties-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1240px;
+
+    @include desktop {
+        margin: 0 100px;  
+    }
+}
+
 
 .property-section {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #F6F6F6;
     border-radius: 25px;
-    padding-top: 56px;
-    padding-bottom: 43px;
-    margin: 40px 100px 0px 100px;
+    padding-bottom:43px;
+    margin-top: 22px;
 
-    @include phone {
-        background-color: transparent;
-        padding-top: 0;
-        padding-bottom: 0;
-        margin-top: 0;
-        margin: $margin0-20px;
-       }
+    @include tablet {
+        background-color: #F6F6F6;
+    }
+
+    @include desktop {
+        background-color: #F6F6F6;
+    }
+
+    @include largeDesktop {
+        background-color: #F6F6F6;
+    }
 }
 
 .property-listing {
@@ -32,18 +51,19 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
-    grid-template-columns: repeat(3, 340px);
-    grid-auto-rows: 340px;
-    padding: 20px;
-
-    @include phone {
-        grid-template-columns: repeat(1, 335px);
-        grid-auto-rows: 255px;
-    }
+    grid-template-columns: repeat(1, 335px);
+    grid-auto-rows: 255px;
+    
 
     @include tablet {
         grid-template-columns: repeat(2, 340px);
         grid-auto-rows: 340px;
+    }
+
+    @include desktop {
+        grid-template-columns: repeat(3, 340px);
+        grid-auto-rows: 340px;  
+        margin-top: 56px;
     }
 
     @include largeDesktop {

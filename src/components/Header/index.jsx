@@ -6,6 +6,7 @@ export default function Header() {
 
   return (
     <header>
+      <div className="container-header">
         <Link to="/">
           <img src= { logoHeader }
           className="logo-header"
@@ -13,6 +14,7 @@ export default function Header() {
           />
         </Link>
       <Navbar />
+      </div>
     </header>
   );
 }

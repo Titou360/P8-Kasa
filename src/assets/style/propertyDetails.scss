@@ -139,17 +139,4 @@
 
 }
 
-.star {
-    display: $displayFlex;
-    flex-direction: $flexDirectionRow;
-    flex-wrap: nowrap;
-    width: 196px;
-    height: 36px;
-
-    @include phone {
-            width: 98px;
-            height: 18px;
-
-    }
-}
 

@@ -5,22 +5,32 @@
 //-----------------------------
 // Banner on homepage
 //-----------------------------
-.image-banner {
+.container-banner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @include desktop {
+  }
+}
+
+.banner {
+  width: 100%;
+  max-width: 1240px;
+
+  &--image {
     position: relative;
-    margin-bottom: 50px;
-    margin: $margin0-100px;
-    margin-top: 38px;
 
       @include phone {
         height: 111px;
-        margin: $margin0-20px;
         margin-top: 27px;
       }
-  
-    .banner--text {
-      width: 100%;
+    }
+
+  &--text {
+      width: 80%;
       position: absolute;
-      bottom: 40%;
+      bottom: 50%;
       transform: translatey(50%);
       margin: 0;
       text-align: center;
@@ -37,39 +47,46 @@
         font-style: normal; 
         line-height: 24px;
         padding-left: 16px;
-        bottom: 30%;
+        bottom: 40%;
       }
 
       @include tablet {
         flex-direction: $flexDirectionColumn;
         justify-content: $alignItemsStart;
         text-align: left;
-        padding: 31px 0px 32px 16px;
         font-size: 42px;
         font-style: normal; 
         line-height: 100%; /* 24px */
-        width: 90%;
+        bottom : 20%
+      }
+
+      @include desktop {
+        width: 100%;
       }
     }
 }
   
-  .banner-home img, .banner-about img {
+.banner-home {
+  width: 100%;
+  max-width: 1440px;
+  display: block;
+  justify-content: center;
+}
+
+.banner-home img, .banner-about img {
     height: 223px;
     width: 100%;
     border-radius: 25px;
     object-fit: cover;
     filter: brightness(0.6);
+    
 
     @include phone {
       height: 111px;
     }
   }
 
-  .image-banner {
-    @include phone {
-      margin-bottom: 22px;
-     }
-  }
+
 
 
 
