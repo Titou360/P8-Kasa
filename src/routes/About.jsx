@@ -7,7 +7,8 @@ export default function About() {
   const aboutData = AboutData;
  
   return (
-    <div>
+    <>
+    <main>
       <section className="image-banner banner-about">
            <Banner
             className="image-banner"
@@ -29,6 +30,7 @@ export default function About() {
         ))}
         </div>
         </section>
-    </div>
+    </main>
+    </>
   );
 }

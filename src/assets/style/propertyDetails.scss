@@ -1,10 +1,8 @@
 @import "variables";
 
 .main-container {
-    margin: 0px auto;
 
     @include phone {
-        margin: $margin0-20px;
 
         .property-titleandlocation {
             order:1;
@@ -78,7 +76,6 @@
     display: flex;
     flex-direction: row;
     justify-content : space-between;
-    margin: $margin0-100px;
 }
 
 .property-notes {
@@ -86,7 +83,6 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: $margin0-100px;
     margin-top: 20px;
 
 
@@ -117,13 +113,9 @@
 .discoverer-container {
     display: flex;
     justify-content: space-between;
-    margin: $margin0-100px;
     margin-top: 50px;
     gap : 96px;
 
-    @include largeDesktop {
-        flex-direction: column;
-    }
 
     @include phone {
         gap : 20px;
@@ -132,9 +124,6 @@
     .discoverer {
         width: 50%;
 
-        @include largeDesktop {
-            width: 100%;
-        }
     }
 
 }

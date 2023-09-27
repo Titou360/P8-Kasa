@@ -1,10 +1,31 @@
 @import "../../assets/style/layout.scss";
+
+.container-site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    border : 3px black solid;
+}
+
 //-----------------------------
 // Homepage
 //-----------------------------
 main {
-    margin-top : 50px;
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 5.35% 0;
+
+
+    @include desktop {
+        // padding: 45px 6.95% 0;
+    }
 }
+
+
 
 
 //-----------------------------
@@ -14,10 +35,8 @@ main {
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: 1240px;
 
     @include desktop {
-        margin: 0 100px;  
     }
 }
 
@@ -40,10 +59,6 @@ main {
     @include desktop {
         background-color: #F6F6F6;
     }
-
-    @include largeDesktop {
-        background-color: #F6F6F6;
-    }
 }
 
 .property-listing {
@@ -51,25 +66,27 @@ main {
     align-items: center;
     justify-content: center;
     gap: 40px;
+    width: 100%;
     grid-template-columns: repeat(1, 335px);
     grid-auto-rows: 255px;
     
 
     @include tablet {
-        grid-template-columns: repeat(2, 340px);
+        grid-template-columns: repeat(2, auto);
         grid-auto-rows: 340px;
+        
     }
 
     @include desktop {
-        grid-template-columns: repeat(3, 340px);
+        grid-template-columns: repeat(3, auto);
         grid-auto-rows: 340px;  
         margin-top: 56px;
     }
 
-    @include largeDesktop {
-        grid-template-columns: repeat(4, 340px);
-        grid-auto-rows: 340px;
-    }
+    // @include largeDesktop {
+    //     grid-template-columns: repeat(4, auto);
+    //     grid-auto-rows: 340px;
+    // }
 }
 
 

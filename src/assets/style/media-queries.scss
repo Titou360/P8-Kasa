@@ -19,9 +19,4 @@
     }
   }
 
-  @mixin largeDesktop {
-    @media (min-width : 1600px) {
-      @content
-    }
-  }
   

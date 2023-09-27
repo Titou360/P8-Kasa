@@ -1,6 +1,9 @@
 @import "../../assets/style/variables.scss";
 
 .discoverer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   cursor: pointer;
   text-align: right;
   border: none;
@@ -8,6 +11,7 @@
   transition: 0.4s;
   position: relative;
   z-index: 2;
+  width: 100%;
   max-width: 1024px;
   opacity: 1;
 

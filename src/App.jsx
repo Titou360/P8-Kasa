@@ -9,7 +9,7 @@ import PropertyDetails from './routes/PropertyDetails';
 
 function App() {
   return (
-    <div>
+    <div className='container-site'>
       <Header />
         <Routes>
           <Route path="/" element= { <Home /> } />

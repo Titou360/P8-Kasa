@@ -5,7 +5,7 @@ export default function Banner({ image, alt, title1, title2 }) {
     <div className='container-banner'>
     <div className='banner'>
       <img className="banner--image" src={ image } alt={ alt } />
-      <h1 className="banner--text slide">
+      <h1 className="banner--text">
         <span>{ title1 }</span>
         <span>{ title2 }</span>
       </h1>

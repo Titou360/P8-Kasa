@@ -1,15 +1,10 @@
 @import "../style/layout.scss";
 
 .about-section {
-    margin: $margin0-100px;
     margin-top: 38px;
-    display: $displayFlex;
-    align-items: $alignContentStart;
     border-radius: 10px;
     gap: 76px;
-    justify-content: $alignContentCenter;
-    padding: 0;
-    position: relative;
+    border: 2px red solid;
 
     @include phone {
         margin : $margin0-20px;
@@ -19,9 +14,12 @@
 .discoverer-section {
     display: $displayFlex;
     flex-direction: $flexDirectionColumn;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
-    justify-content: $alignContentCenter;
-    width: 80%;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
 
     @include phone {
         gap: 20px;

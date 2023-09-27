@@ -16,8 +16,17 @@
 /* Layout */
 @import 'layout'; // Define here all the display (grid, flexbox, etc.)
 
-/* Components */
-@import 'components'; // Define here components style (button, form, etc.)
+/* Components */ // Define here components style (button, form, etc.)
+@import "../../components/Banner/banner.scss";
+@import "../../components/slideshow/slideshow.scss";
+@import "../../components/Discoverer/discoverer.scss";
+@import "../../components/Error404/error404.scss";
+@import "../../components/Footer/footer.scss";
+@import "../../components/Header/header.scss";
+@import "../../components/PropertyCard/propertycard.scss";
+@import "../../components/Stars/stars.scss";
+@import "../../components/Navbar/navbar.scss";
+@import "../../components/LoadingAnimation/loader.scss";
 
 /* Pages */
 @import 'pages'; // Define specifical styles fort website pages

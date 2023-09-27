@@ -10,7 +10,7 @@ export default function Home() {
     return (
          <>
   <main>
-  <section className="banner banner-home">
+  <section className="banner-home banner">
   <Banner
   className="image-banner"
   image={ BannerHome }

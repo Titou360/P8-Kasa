@@ -9,46 +9,38 @@
   display: flex;
   justify-content: center;
   width: 100%;
-
-  @include desktop {
-  }
 }
 
-.banner {
+.banner { 
   width: 100%;
-  max-width: 1240px;
+  position: relative;
 
   &--image {
-    position: relative;
 
-      @include phone {
-        height: 111px;
-        margin-top: 27px;
-      }
-    }
+    // margin-top: 27px;
+
+    // @include desktop {
+    //   margin-top: 27px;
+    // }
+  }
 
   &--text {
-      width: 80%;
       position: absolute;
-      bottom: 50%;
-      transform: translatey(50%);
-      margin: 0;
-      text-align: center;
       display: $displayFlex;
-      flex-direction: $flexDirectionRow;
-      justify-content: $alignItemsCenter;
+      flex-direction: column;
+      text-align: left;
+      font-size: 24px;
+      font-style: normal; 
+      line-height: 24px; 
+      padding-left: 30px;
+      width: 100%;
+      top: 50%; 
+      left: 50%;
+      transform: translate(-50%, -50%); 
       gap: 5px;
+      animation : fadeIn 2000ms ease 1s forwards;
+      opacity: 0;
 
-      @include phone {
-        flex-direction: column;
-        justify-content: $alignItemsStart;
-        text-align: left;
-        font-size: 24px;
-        font-style: normal; 
-        line-height: 24px;
-        padding-left: 16px;
-        bottom: 40%;
-      }
 
       @include tablet {
         flex-direction: $flexDirectionColumn;
@@ -56,53 +48,41 @@
         text-align: left;
         font-size: 42px;
         font-style: normal; 
-        line-height: 100%; /* 24px */
-        bottom : 20%
+        line-height: 24px;
       }
 
       @include desktop {
-        width: 100%;
+        flex-direction: $flexDirectionRow;
+        justify-content: $alignItemsCenter;
+        text-align: center;
       }
     }
 }
   
 .banner-home {
-  width: 100%;
-  max-width: 1440px;
-  display: block;
+  display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .banner-home img, .banner-about img {
-    height: 223px;
+    height: 111px;
     width: 100%;
     border-radius: 25px;
     object-fit: cover;
     filter: brightness(0.6);
     
-
-    @include phone {
-      height: 111px;
+    @include desktop {
+      height: 223px;
     }
   }
 
 
-
-
-
-  .slide {
-    position: relative;
-    opacity : 0;
-    animation : slideIn 1s ease 1s forwards;
-  }
-
-  @keyframes slideIn {
+  @keyframes fadeIn {
     0% {
-      transform: translateY(50px);
       opacity: 0;
     }
     100% {
-      transform: translateY(0);
       opacity: 1;
     }
   }
