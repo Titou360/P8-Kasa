@@ -18,6 +18,7 @@ function App() {
           <Route path="*" element= { <Error404 /> } />
           <Route path="/property/*" element= { <Error404 /> } />
           <Route path="/Kasa/" element={ <Home /> } />
+          <Route path ="/Kasa-P8/" element={<Home />} />
         </Routes>
       <Footer />
     </div>
