@@ -1,12 +1,21 @@
 @import "../../assets/style/layout.scss";
 
+
+.root {
+    @include largeDesktop {
+        max-width : 1900px;
+        margin: 0 auto;
+    }
+}
 .container-site {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1440px;
+    justify-content: center;
+    max-width: 1800px;
     width: 100%;
     margin: 0 auto;
+    border: 2px red solid;
 }
 
 //-----------------------------
@@ -20,7 +29,7 @@ main {
 
 
     @include desktop {
-        // padding: 45px 6.95% 0;
+        padding: 45px 6.95% 0;
     }
 }
 
@@ -50,12 +59,17 @@ main {
     border-radius: 25px;
     padding-bottom:43px;
     margin-top: 22px;
+    padding: 20px;
 
     @include tablet {
         background-color: #F6F6F6;
     }
 
     @include desktop {
+        background-color: #F6F6F6;
+    }
+
+    @include largeDesktop {
         background-color: #F6F6F6;
     }
 }
@@ -82,10 +96,10 @@ main {
         margin-top: 56px;
     }
 
-    // @include largeDesktop {
-    //     grid-template-columns: repeat(4, auto);
-    //     grid-auto-rows: 340px;
-    // }
+     @include largeDesktop {
+         grid-template-columns: repeat(4, auto);
+         grid-auto-rows: 340px;
+     }
 }
 
 

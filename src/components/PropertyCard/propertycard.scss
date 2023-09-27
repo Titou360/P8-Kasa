@@ -27,15 +27,15 @@
             font-weight: 500;
             line-height: 142.6%; /* 25.668px */
             position: absolute;
-            top: 85%;
+            top: 78%;
             left: 0;
             right: 0;
             padding: 0px 20px;
             margin: 0 auto;
             z-index: 1;
 
-            @include phone {
-                top : 78%;
+            @include desktop {
+                top : 85%;
             }
 
         }

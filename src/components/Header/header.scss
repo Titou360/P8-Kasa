@@ -13,8 +13,11 @@ header {
 
 
     @include desktop {
-      max-width: 1440px;
       margin-top: 45px;
+    }
+
+    @include largeDesktop {
+      margin-top : 45px
     }
 
       img {
@@ -22,6 +25,11 @@ header {
         height: 47px;
 
         @include desktop {
+        width: 210px;
+        height: 68px;
+        }
+
+        @include largeDesktop {
         width: 210px;
         height: 68px;
         }

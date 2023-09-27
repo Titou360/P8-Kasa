@@ -55,7 +55,16 @@
         flex-direction: $flexDirectionRow;
         justify-content: $alignItemsCenter;
         text-align: center;
+        font-size: 48px;
       }
+
+      @include largeDesktop {
+        flex-direction: $flexDirectionRow;
+        justify-content: $alignItemsCenter;
+        text-align: center;
+        font-size: 48px;
+      }
+
     }
 }
   
@@ -73,6 +82,10 @@
     filter: brightness(0.6);
     
     @include desktop {
+      height: 223px;
+    }
+
+    @include largeDesktop {
       height: 223px;
     }
   }

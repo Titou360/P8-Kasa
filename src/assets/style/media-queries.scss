@@ -14,7 +14,13 @@
   
   // Mixin for desktop computer (from 768px)
   @mixin desktop {
-    @media (min-width: 767px) and (max-width: 1600px) {
+    @media (min-width: 767px) and (max-width: 1440px) {
+      @content;
+    }
+  }
+
+  @mixin largeDesktop {
+    @media (min-width: 1441px) {
       @content;
     }
   }
