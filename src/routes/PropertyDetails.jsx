@@ -13,7 +13,7 @@ export default function PropertyDetail() {
 
 
   return (
-    <div>
+    <>
       { !property && (<Navigate to='Page404' replace= { true } />)}
       { property && (
 
@@ -86,7 +86,7 @@ export default function PropertyDetail() {
 
             </div>
       )}
-    </div>
+    </>
   );
 
   

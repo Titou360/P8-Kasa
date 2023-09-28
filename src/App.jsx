@@ -13,10 +13,9 @@ function App() {
       <Header />
         <Routes>
           <Route path="/" element= { <Home /> } />
-          <Route path="/P8-Kasa" element= { <Home /> } />
           <Route path="/about" element= { <About /> } />
           <Route path="/property/:id" element={ <PropertyDetails /> } />
-          <Route path="*" element= { <Error404 /> } />
+          <Route path="/*" element= { <Error404 /> } />
           <Route path="/property/*" element= { <Error404 /> } />
         </Routes>
       <Footer />
