@@ -50,19 +50,19 @@ export default function PropertyDetail() {
             </div>
 
             <div className="property-notes">
-              <span className="property-notes--tags">
+              <div className="property-notes--tags">
               {property.tags.map((tag, index) => (
-                <span key={index} className="tag">
+                <div key={index} className="tag">
                 {tag}
-              </span>
+              </div>
               ))}
-              </span>
+              </div>
 
-              <span className="property-notes--rating">
+              <div className="property-notes--rating">
                 <Stars
               starRating={property.rating}
               />
-              </span>
+              </div>
               
             </div>
 

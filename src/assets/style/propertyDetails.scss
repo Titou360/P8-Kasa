@@ -1,10 +1,14 @@
 @import "variables";
 
 .main-container {
-
-    width: 100%;
-    max-width: 1240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
     margin: 0 auto;
+    max-width: 1240px;
+    border : solid 2px black;
+    
 
     @include phone {
 
@@ -36,7 +40,7 @@
     font-size: 36px;
     font-style: normal;
     font-weight: 500;
-    line-height: 142.6%; /* 51.336px */
+    line-height: 51px;
 
     @include phone {
         font-size: 18px;
@@ -81,6 +85,7 @@
     display: flex;
     flex-direction: row;
     justify-content : space-between;
+    width: 100%;
 }
 
 .property-notes {
@@ -89,6 +94,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 20px;
+    width: 100%;
 
 
     &--tags {
@@ -118,8 +124,10 @@
 .discoverer-container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     margin-top: 50px;
     gap : 96px;
+    width: 100%;
 
 
     @include phone {
