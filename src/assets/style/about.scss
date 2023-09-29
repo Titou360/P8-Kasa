@@ -4,26 +4,14 @@
     margin-top: 38px;
     border-radius: 10px;
     gap: 76px;
+    margin : $margin0-20px;
 
-    @include phone {
-        margin : $margin0-20px;
+    @include desktop {
+        margin-top: 30px;
     }
 }
 
-.discoverer-section {
-    display: $displayFlex;
-    flex-direction: $flexDirectionColumn;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
 
-    @include phone {
-        gap: 20px;
-    }
-}
 
 
 

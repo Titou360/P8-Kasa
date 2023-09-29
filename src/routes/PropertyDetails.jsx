@@ -13,55 +13,57 @@ export default function PropertyDetail() {
 
 
   return (
-    <>
+    <div className="container-site">
       { !property && (<Navigate to='Page404' replace= { true } />)}
       { property && (
 
 
-            <div className="main-container">
+            <>
               <Slideshow
                 pictures={property.pictures}
                 title={property.title}
-            />
+              />
 
-            <div className="details-container">
+            <div id="details-container">
 
-            <div className="property-titleandlocation">
-              <span className="property-title">{property.title}</span>
-              <span className="property-location">{property.location}</span>
+              <div className="property-titleandlocation">
+              <div className="property-title">{property.title}</div>
+              <div className="property-location">{property.location}</div>
+              </div>
+
+              <div className="property-ownerdetails">
+
+              <div className="property-ownerdetailsandnotation">
+
+                <div
+                 className="property-ownerdetails__name">
+                 {property.host.name}
+                </div>
+
+                <img
+                className="property-ownerdetails__profilpic"
+                src={property.host.picture}
+                alt={property.host.name}>
+                </img>
+              </div>
+              
+
+              <div className="property-tags--rating">
+                <Stars
+              starRating={property.rating}
+              />
+              </div>
+
+
             </div>
 
-            <div className="property-ownerdetails">
-
-              <span
-               className="property-ownerdetails__name">
-               {property.host.name}
-              </span>
-
-              <img
-              className="property-ownerdetails__profilpic"
-              src={property.host.picture}
-              alt={property.host.name}>
-              </img>
-
-
-            </div>
-
-            </div>
-
-            <div className="property-notes">
-              <div className="property-notes--tags">
+            <div className="property-tags">
+              <div className="property-tags--tags">
               {property.tags.map((tag, index) => (
                 <div key={index} className="tag">
                 {tag}
               </div>
               ))}
-              </div>
-
-              <div className="property-notes--rating">
-                <Stars
-              starRating={property.rating}
-              />
               </div>
               
             </div>
@@ -83,10 +85,10 @@ export default function PropertyDetail() {
               className="discoverer-equipments"
               />
             </div>
-
             </div>
+            </>
       )}
-    </>
+    </div>
   );
 
   

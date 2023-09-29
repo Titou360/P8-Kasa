@@ -16,9 +16,17 @@ footer {
 
     @include phone {
         margin-top: 27px;
-        padding : 66px auto 58px auto;
+        width: 100%;
         gap: 0px;
 
+    }
+
+    @include desktop {
+        width: 100%;
+    }
+
+    @include largeDesktop {
+        width: 100%;
     }
 
 

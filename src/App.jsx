@@ -9,6 +9,7 @@ import PropertyDetails from './routes/PropertyDetails';
 
 function App() {
   return (
+    <>
     <div className='container-site'>
       <Header />
         <Routes>
@@ -18,8 +19,9 @@ function App() {
           <Route path="/*" element= { <Error404 /> } />
           <Route path="/property/*" element= { <Error404 /> } />
         </Routes>
-      <Footer />
     </div>
+      <Footer />
+    </>
   );
 }
 

@@ -4,29 +4,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    justify-content: center;
+    width: 100%;
     margin: 0 auto;
     max-width: 1240px;
-    border : solid 2px black;
-    
-
-    @include phone {
-
-        .property-titleandlocation {
-            order:1;
-        }
-        .property-notes {
-            order:2;
-        }
-
-        .property-tags {
-            order:3;
-        }
-
-        .property-ownerdetails {
-            order:4;
-        }
-    }
 }
 
 
@@ -34,67 +15,168 @@
     display: flex;
     flex-direction: column;
     color : $primary-color;
+    flex-wrap: nowrap;
+    order : 0;
+
+    @include desktop {
+        width: 49%;
+        order : 0;
+    }
+
+    @include largeDesktop {
+        width: 49%;
+        order : 0
+        }
 }
 
 .property-title {
-    font-size: 36px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 51px;
+    font-family: Montserrat;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
 
-    @include phone {
-        font-size: 18px;
+    @include desktop {
+        font-size: 36px;
+        line-height: 51px;
+    }
+
+    @include largeDesktop {
+        font-size: 36px;
+        line-height: 51px;
     }
 }
 
 .property-location {
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 142.6%; /* 25.668px */
+    line-height: 26px;
+
+    @include desktop  {
+        font-size: 18px;
+    }
+
+    @include largeDesktop {
+        font-size: 18px;
+    }
 }
 
 .property-ownerdetails {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     color : $primary-color;
-    align-items: center;
+    order: 1;
+    width: 100%;
+
+    @include desktop {
+        flex-direction: column;
+        align-items: flex-end;
+        width: 49%;
+        order : 1;
+    }
+
+    @include largeDesktop {
+        flex-direction: column;
+        align-items: flex-end;
+        width: 49%;
+        order : 1
+    }
 
     &__name {
     text-align: right;
-    font-size: 18px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
-    line-height: 142.6%; /* 25.668px */
+    line-height: 17px;
     margin-right: 10px;
     max-width: 93px;
     height: 52px;
+    letter-spacing: 0em;
+    text-align: right;
+
+    @include desktop {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    @include largeDesktop{
+        font-size: 18px;
+        line-height: 26px;
+    }
 
     }
 
     &__profilpic {
         border-radius : 50%;
         object-fit: cover;
-        width: 64px;
-        height: 64px;
+        width: 32px;
+        height: 32px;
         flex-shrink: 0;
+
+        @include desktop {
+            width: 64px;
+            height: 64px;
+        }
+
+        @include largeDesktop {
+            width: 64px;
+            height : 64px;
+        }
     }
 }
 
-.details-container {
+#details-container {
+    max-width: 1440px;
     display: flex;
-    flex-direction: row;
-    justify-content : space-between;
+    flex-wrap: wrap;
+    gap: 5px;
     width: 100%;
+
+    @include desktop {
+        max-width: 1240px;
+    }
 }
 
-.property-notes {
+.property-ownerdetailsandnotation {
+    display : flex; 
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    @include desktop {
+        flex-direction: row;
+    }
+
+    @include largeDesktop {
+        flex-direction: row;
+    }
+    
+
+    @include desktop {
+        display: flex;
+        align-items: center;
+    }
+
+
+}
+
+.property-tags {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 20px;
     width: 100%;
+
+    @include desktop {
+    order : 3;
+    }
+
+    @include largeDesktop {
+    order : 3
+    }
 
 
     &--tags {
@@ -128,9 +210,12 @@
     margin-top: 50px;
     gap : 96px;
     width: 100%;
+    gap: 20px;
+    order : 4;
 
-
-    @include phone {
+    
+    @include desktop {
+        margin-top: 50px;
         gap : 20px;
     }
 
