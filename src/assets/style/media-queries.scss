@@ -1,26 +1,26 @@
 // Mixin for mobile devices (up to 425px)
 @mixin phone {
-    @media (max-width: 600px) {
+    @media only screen and (max-width: 768px) {
       @content;
     }
   }
   
   // Mixin for tablets (from 426px to 767px)
   @mixin tablet {
-    @media (min-width: 600px) and (max-width: 767px) {
+    @media only screen and (min-width: 767px) and (max-width: 991px) {
       @content;
     }
   }
   
   // Mixin for desktop computer (from 768px)
   @mixin desktop {
-    @media (min-width: 767px) and (max-width: 1440px) {
+    @media only screen and (min-width: 992px) and (max-width: 1023px) {
       @content;
     }
   }
 
   @mixin largeDesktop {
-    @media (min-width: 1441px) {
+    @media only screen and (min-width: 1024px) {
       @content;
     }
   }

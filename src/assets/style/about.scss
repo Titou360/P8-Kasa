@@ -5,6 +5,8 @@
     border-radius: 10px;
     gap: 76px;
     margin : $margin0-20px;
+    width: 100%;
+    max-width: 1024px;
 
     @include desktop {
         margin-top: 30px;

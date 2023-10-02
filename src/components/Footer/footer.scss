@@ -10,15 +10,14 @@ footer {
     flex-direction: $flexDirectionColumn;
     align-items: $alignItemsCenter;
     gap: 28px;
-    margin-top: 50px;
+    margin-top: 27px;
     background-color: $secondary-color;
     width: 100%;
+    gap : 0px;
 
-    @include phone {
-        margin-top: 27px;
+    @include tablet {
         width: 100%;
-        gap: 0px;
-
+        margin-top: 50px;
     }
 
     @include desktop {

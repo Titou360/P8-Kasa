@@ -12,7 +12,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 1440px;
+    max-width: 1240px;
     width: 100%;
     margin: 0 auto;
 }
@@ -21,15 +21,13 @@
 // Homepage
 //-----------------------------
 main {
-    max-width: 1240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    padding: 20px 5.35% 0;
-
-
-    @include desktop {
-        padding: 45px 6.95% 0;
-    }
 }
 
 
@@ -42,9 +40,8 @@ main {
     display: flex;
     justify-content: center;
     width: 100%;
-
-    @include desktop {
-    }
+    max-width: 1240px;
+    margin: 0 auto;
 }
 
 
@@ -56,20 +53,24 @@ main {
     align-items: center;
     flex-wrap: wrap;
     border-radius: 25px;
-    padding-bottom:43px;
-    margin-top: 22px;
-    padding: 20px;
+    
 
     @include tablet {
         background-color: #F6F6F6;
+        padding : 56px 50px 43px 50px;
+        margin-bottom: 50px;
     }
 
     @include desktop {
         background-color: #F6F6F6;
+        padding : 56px 50px 43px 50px;
+        margin-bottom: 50px;
     }
 
     @include largeDesktop {
         background-color: #F6F6F6;
+        padding : 56px 50px 43px 50px;
+        margin-bottom: 50px;
     }
 }
 
@@ -85,7 +86,7 @@ main {
 
     @include tablet {
         grid-template-columns: repeat(2, auto);
-        grid-auto-rows: 340px;
+        grid-auto-rows: 280px;
         
     }
 
@@ -96,7 +97,7 @@ main {
     }
 
      @include largeDesktop {
-         grid-template-columns: repeat(4, auto);
+         grid-template-columns: repeat(3, auto);
          grid-auto-rows: 340px;
      }
 }

@@ -67,9 +67,15 @@
 .property-ownerdetails {
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
     color : $primary-color;
     order: 1;
     width: 100%;
+
+    @include tablet {
+        flex-direction: space-between;
+    }
 
     @include desktop {
         flex-direction: column;
@@ -86,6 +92,9 @@
     }
 
     &__name {
+        width: 50%;
+    display: flex;
+    align-items: center;
     text-align: right;
     font-size: 12px;
     font-style: normal;
@@ -134,16 +143,11 @@
     flex-wrap: wrap;
     gap: 5px;
     width: 100%;
-
-    @include desktop {
-        max-width: 1240px;
-    }
 }
 
 .property-ownerdetailsandnotation {
     display : flex; 
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    align-items: center;
 
     @include desktop {
         flex-direction: row;

@@ -10,8 +10,9 @@ import PropertyDetails from './routes/PropertyDetails';
 function App() {
   return (
     <>
-    <div className='container-site'>
+   
       <Header />
+      <div className='container-site'>
         <Routes>
           <Route path="/" element= { <Home /> } />
           <Route path="/about" element= { <About /> } />
