@@ -50,9 +50,44 @@ $alignItemsEnd: flex-end;
 $alignItemsSpaceAround: space-around;
 $alignItemsSpaceBetween: space-between;
 $alignItemsStretch: stretch;
+$aligneItemsBaseline : baseline;
 
 //-----------------------------
-// Margin & alignment
+// Margin & Padding
 //-----------------------------
-$margin0-100px : 0 100px;
+$margin0 : 0;
+$margin0auto : 0 auto;
 $margin0-20px : 0 20px;
+$margin0-100px : 0 100px;
+
+$padding0 : 0;
+$padding0-20 : 0 20px;
+
+//-----------------------------
+// Width & Height 
+//-----------------------------
+$W-49 : 49%;
+$W-50 : 50%;
+$W-85 : 85%;
+$W-89 : 89%;
+$W-100 : 100%;
+
+$H-100 : 100%;
+
+
+
+//-----------------------------
+// Max-width
+//-----------------------------
+
+$max-W1024 : 1024px;
+$max-W1240 : 1240px;
+$max-W1440 : 1440px;
+$max-W1900 : 1900px;
+
+//-----------------------------
+// Font-weight
+//-----------------------------
+$Font-W400 : 400;
+$Font-W500 : 500;
+$Font-W700 : 700;

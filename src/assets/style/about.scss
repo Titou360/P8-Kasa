@@ -1,4 +1,9 @@
-@import "../style/layout.scss";
+//-----------------------------
+// CSS code for About page    /
+//-----------------------------
+@import "layout";
+
+
 
 .about-section {
     margin-top: 38px;
@@ -6,7 +11,7 @@
     gap: 76px;
     margin : $margin0-20px;
     width: 100%;
-    max-width: 1024px;
+    max-width: $max-W1024;
 
     @include desktop {
         margin-top: 30px;

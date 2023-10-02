@@ -1,9 +1,9 @@
-@import "../../assets/style/variables.scss";
+@import "../../assets/style/base.scss";
 
 .discoverer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: $displayFlex;
+  flex-direction: $flexDirectionColumn;
+  justify-content: $alignContentCenter;
   cursor: pointer;
   text-align: right;
   border: none;
@@ -11,8 +11,8 @@
   transition: 0.4s;
   position: relative;
   z-index: 2;
-  width: 100%;
-  max-width: 1024px;
+  width: $W-100;
+  max-width: $max-W1024;
   opacity: 1;
 
   :hover {
@@ -21,9 +21,9 @@
 
   
   &--header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: $displayFlex;
+    justify-content: $alignContentSpaceBetween;
+    align-items: $alignItemsCenter;
     border: none;
     height: 52px;
     background-color: #f0f0f0;
@@ -32,8 +32,8 @@
     border-radius: 10px;
     font-size: 24px;
     font-style: normal;
-    font-weight: 500;
-    width: 100%;
+    font-weight: $Font-W500;
+    width: $W-100;
     position: relative;
     z-index: 2;
     padding-left: 15px;
@@ -54,13 +54,13 @@
     }
   
   &--content {
-    display: flex;
-    flex-direction: column;
+    display: $displayFlex;
+    flex-direction: $flexDirectionColumn;
     cursor: default;
     border-radius: 0 0 10px 10px;
     color: $primary-color;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: $Font-W400;
     line-height: 25px;
     overflow: hidden;
     padding: 20px;
@@ -68,7 +68,7 @@
     transition: max-height 0.5s ease;
     text-align: justify;
     z-index: 1;
-    background-color: #f0f0f0;
+    background-color: $bkg-color;
     margin-top: 0px;
     margin-bottom: 0px;
 
@@ -131,12 +131,12 @@
 .discoverer-section {
   display: $displayFlex;
   flex-direction: $flexDirectionColumn;
-  justify-content: center;
-  align-items: center;
+  justify-content: $alignContentCenter;
+  align-items: $alignItemsCenter;
   gap: 20px;
-  width: 100%;
-  max-width: 1024px;
-  margin: 0 auto;
+  width: $W-100;
+  max-width: $max-W1024;
+  margin: $margin0auto;
 
   @include desktop {
       gap: 30px;
@@ -149,45 +149,11 @@
 
 /*--------------------------------------
 / lineup & lineDown classes and keyframes
----------------------------------------*/
+/---------------------------------------*/
 .lineDown {
   animation: 1s anim-lineDown ease-out forwards;
-}
-@keyframes anim-lineDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-80%);
-  }
-  20% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
 }
 
 .lineUp {
   animation: 1s anim-lineUp ease-out forwards;
-}
-@keyframes anim-lineUp {
-  0% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-  20% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-80%);
-  }
 }

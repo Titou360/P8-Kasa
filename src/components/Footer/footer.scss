@@ -1,5 +1,5 @@
 @import "../../assets/style/layout.scss";
-@import "../../assets/style/variables.scss";
+@import "../../assets/style/base.scss";
 
 //-----------------------------
 // Footer                     /
@@ -12,20 +12,20 @@ footer {
     gap: 28px;
     margin-top: 27px;
     background-color: $secondary-color;
-    width: 100%;
+    width: $W-100;
     gap : 0px;
 
     @include tablet {
-        width: 100%;
+        width: $W-100;
         margin-top: 50px;
     }
 
     @include desktop {
-        width: 100%;
+        width: $W-100;
     }
 
     @include largeDesktop {
-        width: 100%;
+        width: $W-100;
     }
 
 
@@ -40,7 +40,7 @@ footer {
     color : $third-color;
     font-size: 24px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: $Font-W500;
     line-height: 34px;
     margin-bottom: 29px;
 }

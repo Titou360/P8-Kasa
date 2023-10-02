@@ -12,7 +12,6 @@ function App() {
     <>
    
       <Header />
-      <div className='container-site'>
         <Routes>
           <Route path="/" element= { <Home /> } />
           <Route path="/about" element= { <About /> } />
@@ -20,7 +19,6 @@ function App() {
           <Route path="/*" element= { <Error404 /> } />
           <Route path="/property/*" element= { <Error404 /> } />
         </Routes>
-    </div>
       <Footer />
     </>
   );

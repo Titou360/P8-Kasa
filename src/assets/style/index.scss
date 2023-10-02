@@ -4,14 +4,11 @@
 /* Reset CSS */
 //@import 'reset'; // Use a reinitialisation file is needed
 
-/* Variables */
-@import 'variables'; // Define your SCSS variables here (color, font size, etc.)
-
 /* Mixins */
 //@import 'mixins'; // Define your mixins here (pour la réutilisation de styles)
 
 /* Base Styles */
-@import 'base'; // Define here HTML elements (body, a, p, etc.)
+@import 'base'; // Define here HTML elements (body, a, p, etc.) & colors
 
 /* Layout */
 @import 'layout'; // Define here all the display (grid, flexbox, etc.)
@@ -37,7 +34,7 @@
 @import 'media-queries'; // Manage responsives styles using Media Queries
 
 /* Animations */
-//@import 'animations'; // Define CSS animations if needed
+@import 'animations'; // Define CSS animations if needed
 
 /* Custom Styles */
 //@import 'custom'; // Add your personnal custom here

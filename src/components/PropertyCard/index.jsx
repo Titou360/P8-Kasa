@@ -9,9 +9,9 @@ export default function PropertyCard ( {property} ) {
           <Link to={`/property/${property.id}`} title={property.title}>
             <article className="card--article" id={property.id}>
               <img className="card--article__image" src={property.cover} alt={property.title} />
-                <h3 className="card--article__title">
+                <h2 className="card--article__title">
                     {property.title}
-                </h3>
+                </h2>
                     {/* <p className="card--article__location">
                     {property.location}
                     </p> */}

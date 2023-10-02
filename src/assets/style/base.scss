@@ -1,6 +1,23 @@
+//-----------------------------
+// CSS code for website base  /
+//-----------------------------
+
 @import "layout.scss";
 @import "vendor.scss";
 @import "animations.scss";
+@import "./media-queries.scss";
+
+//-----------------------------
+// Color                      /
+//-----------------------------
+$primary-color : #FF6060;
+$secondary-color : #000;
+$third-color : #FFFFFF;
+$bkg-color : #F6F6F6;
+
+//-----------------------------
+// Root & Body CSS            /
+//-----------------------------
 
 
 body {
@@ -11,6 +28,26 @@ body {
 
 
 //-----------------------------
+// Heading H1 to H6           /
+//-----------------------------
+    h1 {
+      z-index: 1;
+      color: $third-color;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: $Font-W500;
+      line-height: 68px;
+      margin: $margin0;
+      padding: $padding0;
+      ;
+  
+      @include phone {
+          font-size : 24px;
+          padding: $padding0;
+      }
+      
+  }
+//-----------------------------
 // List                       /
 //-----------------------------
 
@@ -20,7 +57,7 @@ ul {
   }
 
   a {
-    font-weight: 500;
+    font-weight: $Font-W500;
     color: $primary-color;
     text-decoration: inherit;
   }
@@ -29,9 +66,9 @@ ul {
 }
 
 #root {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 1900px;
+  display: $displayFlex;
+  flex-direction: $flexDirectionColumn;
+  align-items: $alignItemsCenter;
+  width: $W-100;
+  max-width: $max-W1900 ;
 }

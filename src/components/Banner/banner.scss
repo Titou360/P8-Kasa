@@ -1,39 +1,32 @@
-@import '../../assets/style/variables.scss';
+@import '../../assets/style/base.scss';
 @import '../../assets/style/layout.scss';
 @import '../../assets/style/media-queries.scss';
+@import '../../assets/style/animations.scss';
 
 //-----------------------------
 // Banner on homepage
 //-----------------------------
-.container-banner {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+.container-banner, .banner-home, .banner-about {
+  display: $displayFlex;
+  justify-content: $alignItemsCenter;
+  width: $W-100;
 }
 
 .banner { 
-  width: 100%;
+  width: $W-100;
   position: relative;
 
-  &--image {
-
-    // margin-top: 27px;
-
-    // @include desktop {
-    //   margin-top: 27px;
-    // }
-  }
 
   &--text {
       position: absolute;
       display: $displayFlex;
-      flex-direction: column;
+      flex-direction: $flexDirectionColumn;
       text-align: left;
       font-size: 24px;
       font-style: normal; 
       line-height: 24px; 
       padding-left: 30px;
-      width: 100%;
+      width: $W-100;
       top: 50%; 
       left: 50%;
       transform: translate(-50%, -50%); 
@@ -46,7 +39,7 @@
         flex-direction: $flexDirectionColumn;
         justify-content: $alignItemsStart;
         text-align: left;
-        font-size: 42px;
+        font-size: 32px;
         font-style: normal; 
         line-height: 24px;
       }
@@ -69,11 +62,8 @@
 }
   
 .banner-home, .banner-about{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  max-width: 1240px;
-  margin: 0 auto;
+  max-width: $max-W1240;
+  margin: $margin0auto;
   margin-bottom: 22px;
 
   @include desktop {
@@ -89,11 +79,11 @@
 
 .banner-home img, .banner-about img {
     height: 111px;
-    width: 100%;
+    width: $W-100;
     border-radius: 25px;
     object-fit: cover;
     filter: brightness(0.6);
-    max-width: 1240px;
+    max-width: $max-W1240 ;
     
     @include desktop {
       height: 223px;
@@ -105,11 +95,3 @@
   }
 
 
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }

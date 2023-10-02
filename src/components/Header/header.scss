@@ -1,16 +1,17 @@
 @import '../../assets/style/layout.scss';
 @import '../../assets/style/media-queries.scss';
+@import '../../assets/style/animations.scss';
 
 /* -----------------------------
 // Header                     /
 ----------------------------- */
 header {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    display: $displayFlex;
+    justify-content: $alignContentCenter;
+    width: $W-100;
     height: 46px;
-    max-width: 1240px;
-    margin: 0 auto;
+    max-width: $max-W1240;
+    margin: $margin0auto;
     margin-top: 20px;
     margin-bottom: 27px;
 
@@ -25,20 +26,6 @@ header {
       margin-bottom: 50px;
       height: 68px;
     }
-
-  //   @include tablet {
-  //     padding: 20px 5.35% 0;
-  //   }
-
-  // @include desktop {
-  //     margin-top: 45px;
-  //     padding: 45px 6.95% 0;
-  //   }
-
-  //   @include largeDesktop {
-  //     margin-top : 45px;
-  //     padding: 45px 6.95% 0;
-  //   }
 
       img {
         width: 145px;
@@ -58,11 +45,12 @@ header {
 }
 
 .container-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 1240px;
+  display: $displayFlex;
+  justify-content: $alignContentSpaceBetween;
+  align-items: $alignItemsCenter;
+  width: $W-100;
+  max-width: $max-W1240;
+  padding : $padding0-20 ;
 }
 
 
@@ -88,8 +76,3 @@ header {
 }
 
 
-@keyframes underLink {
-  to {
-    width: 100%;
-  }
-}

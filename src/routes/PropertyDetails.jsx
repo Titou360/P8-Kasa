@@ -27,7 +27,7 @@ export default function PropertyDetail() {
             <div id="details-container">
 
               <div className="property-titleandlocation">
-              <div className="property-title">{property.title}</div>
+              <div><h1 className="property-title">{property.title}</h1></div>
               <div className="property-location">{property.location}</div>
               </div>
 
@@ -60,8 +60,9 @@ export default function PropertyDetail() {
             <div className="property-tags">
               <div className="property-tags--tags">
               {property.tags.map((tag, index) => (
-                <div key={index} className="tag">
+                <div key={index} className="tag"><p>
                 {tag}
+                </p>
               </div>
               ))}
               </div>

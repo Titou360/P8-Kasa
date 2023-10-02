@@ -2,32 +2,69 @@
 
 
 .root {
+
+    @include tablet {
+        max-width: $max-W1440;
+    }
+
+    @include desktop {
+    max-width : $max-W1440;
+    margin: $margin0auto; 
+    }
+
     @include largeDesktop {
-        max-width : 1900px;
-        margin: 0 auto;
+        max-width : $max-W1900;
+        margin: $margin0auto;
     }
 }
 .container-site {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 1240px;
-    width: 100%;
-    margin: 0 auto;
+    display: $displayFlex;
+    flex-direction: $flexDirectionColumn;
+    align-items: $alignItemsCenter;
+    justify-content: $alignContentCenter;
+    max-width: $max-W1240;
+    width: $W-85 ;
+    margin: $margin0auto;
+    margin-bottom: 27px;
+
+    @include tablet {
+        margin-bottom: 37px;
+    }
+
+    @include desktop {
+        margin-bottom: 50px;
+        width: $W-100;
+    }
+
+    @include largeDesktop {
+        margin-bottom: 50px;
+        width: $W-100;
+    }
 }
 
 //-----------------------------
 // Homepage
 //-----------------------------
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
+    display: $displayFlex;
+    flex-direction: $flexDirectionColumn;
+    justify-content: $alignContentCenter;
+    align-items: $alignItemsCenter;
+    max-width: $max-W1440;
+    width: $W-89;
+    margin: $margin0auto;
+
+    @include tablet {
+        width: $W-89 ;
+    }
+
+    @include desktop {
+        width: $W-100;
+    }
+
+    @include largeDesktop {
+        width: $W-100;
+    }
 }
 
 
@@ -37,49 +74,48 @@ main {
 // Cards Gallery on Homepage
 //-----------------------------
 .properties-section {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 1240px;
-    margin: 0 auto;
+    display:$displayFlex;
+    justify-content: $alignContentCenter;
+    width: $W-100;
+    max-width: $max-W1240;
+    margin: $margin0auto;
 }
 
 
 .property-section {
-    display: flex;
-    justify-content: center;
+    display: $displayFlex;
+    justify-content: $alignContentCenter;
+    align-items: $alignItemsCenter;
     flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-    flex-wrap: wrap;
+    width: $W-100;
     border-radius: 25px;
     
 
     @include tablet {
-        background-color: #F6F6F6;
+        background-color: $bkg-color;
         padding : 56px 50px 43px 50px;
         margin-bottom: 50px;
     }
 
     @include desktop {
-        background-color: #F6F6F6;
+        background-color: $bkg-color;
         padding : 56px 50px 43px 50px;
         margin-bottom: 50px;
     }
 
     @include largeDesktop {
-        background-color: #F6F6F6;
+        background-color: $bkg-color;
         padding : 56px 50px 43px 50px;
         margin-bottom: 50px;
     }
 }
 
 .property-listing {
-    display: grid;
-    align-items: center;
-    justify-content: center;
+    display: $displayGrid;
+    align-items: $alignItemsCenter;
+    justify-content: $alignContentCenter;
     gap: 40px;
-    width: 100%;
+    width: $W-100;
     grid-template-columns: repeat(1, 335px);
     grid-auto-rows: 255px;
     

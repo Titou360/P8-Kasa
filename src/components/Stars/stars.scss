@@ -1,13 +1,23 @@
 .star {
     display: $displayFlex;
     flex-direction: $flexDirectionRow;
-    flex-wrap: nowrap;
-    width: 196px;
-    height: 36px;
+    flex-wrap: $flexWrapNoWrap;
+    width: 98px;
+    height: 18px;
 
-    @include phone {
-            width: 98px;
-            height: 18px;
-
+    @include tablet {
+        width: 196px;
+        height: 36px;
     }
+
+    @include desktop {
+        width: 196px;
+        height: 36px;
+    }
+
+    @include largeDesktop {
+        width: 196px;
+        height: 36px;
+    }
+
 }

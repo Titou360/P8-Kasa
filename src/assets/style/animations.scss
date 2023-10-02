@@ -1,2 +1,86 @@
+//-----------------------------
+// CSS code for Animations    /
+//-----------------------------
 
-  
+//underLink is the effect under the link <a> in navbar
+@keyframes underLink {
+  to {
+    width: 100%;
+  }
+}
+
+//fadeIn is used in the banner on homepage
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+// anim-lineDown is used in about page for the discoverer content
+  @keyframes anim-lineDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+// anim-lineDown is used in about page for the discoverer content
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    20% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-80%);
+    }
+  }
+
+
+  // Spin is used in the LoaderComponent
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+// Float animation is used on homepage on card hover
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+      transform: translatey(0px);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+      transform: translatey(-20px);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+      transform: translatey(0px);
+    }
+  }

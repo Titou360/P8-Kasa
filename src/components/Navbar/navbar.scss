@@ -5,15 +5,25 @@
 
         a {
             text-align: right;
-            font-size: 24px;
+            font-size: 12px;
             font-style: normal;
-            font-weight: 500;
+            font-weight: $Font-W500;
             line-height: 34px;
             position: relative;
-            
-            @include phone  {
-                font-size: 12px;
-                text-transform: uppercase;
+            text-transform: uppercase;
+
+            @include tablet {
+                font-size: 24px;
+            }
+
+            @include desktop {
+                font-size: 24px;
+                text-transform: none;
+            }
+
+            @include largeDesktop {
+                font-size: 24px;
+                text-transform: none;
             }
         }
 }
