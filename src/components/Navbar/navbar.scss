@@ -1,7 +1,19 @@
 .nav-list {
     display: $displayFlex;
     flex-direction: $flexDirectionRow;
-    gap: 26px;
+    gap: 8px;
+
+    @include tablet {
+        gap: 26px;
+    }
+
+    @include desktop {
+        gap: 26px;
+    }
+
+    @include largeDesktop {
+        gap: 26px;
+    }
 
         a {
             text-align: right;
@@ -14,6 +26,7 @@
 
             @include tablet {
                 font-size: 24px;
+                text-transform: none;
             }
 
             @include desktop {

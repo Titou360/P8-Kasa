@@ -38,9 +38,24 @@ footer {
 
 .footer--p {
     color : $third-color;
-    font-size: 24px;
+    font-size: 12px;
     font-style: normal;
     font-weight: $Font-W500;
-    line-height: 34px;
+    line-height: 17px;
     margin-bottom: 29px;
+
+    @include tablet {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    @include desktop {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    @include largeDesktop {
+        font-size: 24px;
+        line-height: 34px;
+    }
 }

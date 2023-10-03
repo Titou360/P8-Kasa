@@ -110,6 +110,11 @@
     letter-spacing: 0em;
     text-align: right;
 
+    @include tablet {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
     @include desktop {
         font-size: 18px;
         line-height: 26px;
@@ -132,12 +137,19 @@
         @include desktop {
             width: 64px;
             height: 64px;
+
         }
 
         @include largeDesktop {
             width: 64px;
             height : 64px;
         }
+    }
+
+    &__profilpic:hover {
+@include largeDesktop {
+    scale : 1.5;
+}
     }
 }
 

@@ -36,8 +36,8 @@
 
 
       @include tablet {
-        flex-direction: $flexDirectionColumn;
-        justify-content: $alignItemsStart;
+        flex-direction: $flexDirectionRow;
+        justify-content: $alignItemsCenter;
         text-align: left;
         font-size: 32px;
         font-style: normal; 
