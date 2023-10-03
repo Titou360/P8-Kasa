@@ -116,7 +116,7 @@ main {
     justify-content: $alignContentCenter;
     gap: 40px;
     width: $W-100;
-    grid-template-columns: repeat(1, 335px);
+    grid-template-columns: repeat(1, auto);
     grid-auto-rows: 255px;
     
 
