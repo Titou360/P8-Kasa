@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Arrow from "../../assets/image/arrow/arrow_back.png";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 export default function Discoverer({ title, content }) {
   const [isContentVisible, setContentVisible] = useState(false);
@@ -30,8 +30,6 @@ export default function Discoverer({ title, content }) {
     </div>
   );
 }
-
-
 
 Discoverer.propTypes = {
   title: PropTypes.string.isRequired,

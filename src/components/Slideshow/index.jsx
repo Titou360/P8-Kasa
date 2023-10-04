@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import ArrowForward from "../../assets/image/arrow/arrow_forward.png";
 import ArrowBack from "../../assets/image/arrow/arrow_back.png";
+import PropTypes from 'prop-types';
 
 
 export default function Slideshow({ pictures, title }) {
@@ -32,13 +33,6 @@ export default function Slideshow({ pictures, title }) {
             setCurrentPictureIndex(currentPictureIndex + 1);
         }
     }
-    
-    
-    
-    
-    
-    
-    
 
     const currentPicture = pictures[currentPictureIndex];
     if (pictureLength === 1) {
@@ -61,3 +55,22 @@ export default function Slideshow({ pictures, title }) {
         </section>
     );
 }
+
+
+Slideshow.propTypes = {
+    property: PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      cover: PropTypes.string.isRequired,
+      pictures: PropTypes.arrayOf(PropTypes.string).isRequired,
+      description: PropTypes.string.isRequired,
+      host: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        picture: PropTypes.string.isRequired,
+      }).isRequired,
+      rating: PropTypes.string.isRequired,
+      location: PropTypes.string.isRequired,
+      equipments: PropTypes.arrayOf(PropTypes.string).isRequired,
+      tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+    }).isRequired,
+};

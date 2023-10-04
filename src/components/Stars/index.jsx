@@ -1,8 +1,10 @@
 import starActive from '../../assets/image/stars/star-active.png';
 import starInactive from '../../assets/image/stars/star-inactive.png';
+import PropTypes from 'prop-types';
 
 
-export default function Stars ({ starRating }) {
+
+export default function Stars ({starRating}) {
 
     const maxRating = 5;
     const star = [];
@@ -21,4 +23,9 @@ export default function Stars ({ starRating }) {
         <div className="star">{star}</div>
     );
 }
+
+Stars.propTypes = {
+    image: PropTypes.string.isRequired,
+    starRating : PropTypes.string.isRequired
+  };
 
