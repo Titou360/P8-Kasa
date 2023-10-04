@@ -41,7 +41,7 @@ export default function Slideshow({ pictures, title }) {
                 <img
                     src={currentPicture}
                     alt={title}
-                    className='slideshow-picture' />
+                    className='slideshow-picture-alone' />
             </section>
         );
     }
@@ -58,19 +58,6 @@ export default function Slideshow({ pictures, title }) {
 
 
 Slideshow.propTypes = {
-    property: PropTypes.shape({
-      id: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
-      cover: PropTypes.string.isRequired,
       pictures: PropTypes.arrayOf(PropTypes.string).isRequired,
-      description: PropTypes.string.isRequired,
-      host: PropTypes.shape({
-        name: PropTypes.string.isRequired,
-        picture: PropTypes.string.isRequired,
-      }).isRequired,
-      rating: PropTypes.string.isRequired,
-      location: PropTypes.string.isRequired,
-      equipments: PropTypes.arrayOf(PropTypes.string).isRequired,
-      tags: PropTypes.arrayOf(PropTypes.string).isRequired,
-    }).isRequired,
 };

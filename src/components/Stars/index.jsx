@@ -25,7 +25,6 @@ export default function Stars ({starRating}) {
 }
 
 Stars.propTypes = {
-    image: PropTypes.string.isRequired,
     starRating : PropTypes.string.isRequired
   };
 
